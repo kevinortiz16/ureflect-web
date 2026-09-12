@@ -233,6 +233,26 @@
     "emailCta": "Escribir un correo",
     "areaLabel": "Zona de servicio",
     "areaValue": "DMV — Washington D.C., Maryland y Virginia",
-    "formNote": "El formulario de contacto en línea está en construcción — por ahora, escríbenos directo por WhatsApp o correo y te respondemos personalmente."
+    "formNote": "¿Prefieres WhatsApp o correo? Ahí arriba tienes los enlaces directos.",
+    "form": {
+      "formHeading": "O escríbenos directo desde aquí",
+      "nameLabel": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "emailFieldLabel": "Correo electrónico",
+      "emailPlaceholder": "tucorreo@ejemplo.com",
+      "phoneFieldLabel": "Teléfono (opcional)",
+      "phonePlaceholder": "(202) 555-0100",
+      "serviceLabel": "¿Qué te interesa? (opcional)",
+      "servicePlaceholder": "Ej. video de transformación, sitio web, plan mensual...",
+      "messageLabel": "Cuéntanos sobre tu proyecto",
+      "messagePlaceholder": "Escribe los detalles de lo que necesitas...",
+      "submitButton": "Enviar mensaje",
+      "submittingButton": "Enviando...",
+      "successTitle": "¡Mensaje enviado!",
+      "successBody": "Gracias por escribirnos. Te responderemos en menos de 24 horas.",
+      "errorTitle": "Algo salió mal",
+      "errorBody": "No pudimos enviar tu mensaje. Intenta de nuevo o escríbenos por WhatsApp.",
+      "requiredNote": "* Campos obligatorios"
+    }
   }
 }

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@fontsource/inter": "^5",
@@ -14,7 +15,10 @@
     "next": "16.3.5",
     "next-intl": "^4.14.4",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "@prisma/client": "^6",
+    "nodemailer": "^10",
+    "zod": "^4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -24,6 +28,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "prisma": "^6",
+    "@types/nodemailer": "^7"
   }
 }

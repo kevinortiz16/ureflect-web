@@ -233,6 +233,26 @@
     "emailCta": "Send an email",
     "areaLabel": "Service area",
     "areaValue": "DMV — Washington D.C., Maryland & Virginia",
-    "formNote": "The online contact form is still in progress — for now, reach us directly on WhatsApp or email and you'll get a personal reply."
+    "formNote": "Prefer WhatsApp or email? You'll find direct links above.",
+    "form": {
+      "formHeading": "Or write to us directly from here",
+      "nameLabel": "Full name",
+      "namePlaceholder": "Your name",
+      "emailFieldLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "phoneFieldLabel": "Phone (optional)",
+      "phonePlaceholder": "(202) 555-0100",
+      "serviceLabel": "What are you interested in? (optional)",
+      "servicePlaceholder": "E.g. transformation video, website, monthly plan...",
+      "messageLabel": "Tell us about your project",
+      "messagePlaceholder": "Write the details of what you need...",
+      "submitButton": "Send message",
+      "submittingButton": "Sending...",
+      "successTitle": "Message sent!",
+      "successBody": "Thanks for reaching out. We'll get back to you within 24 hours.",
+      "errorTitle": "Something went wrong",
+      "errorBody": "We couldn't send your message. Try again or write to us on WhatsApp.",
+      "requiredNote": "* Required fields"
+    }
   }
 }

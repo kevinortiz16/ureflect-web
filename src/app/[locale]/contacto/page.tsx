@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import ContactForm from "@/components/contact-form";
 
 export default async function ContactoPage() {
   const t = await getTranslations("contactPage");
@@ -70,6 +71,15 @@ export default async function ContactoPage() {
         <p className="mt-8 text-center text-xs leading-relaxed text-brand-muted">
           {t("formNote")}
         </p>
+
+        {/* Formulario real: valida y guarda en base de datos, y envía
+            notificación por correo (ver src/app/api/contact/route.ts). */}
+        <div className="mt-10">
+          <h2 className="mb-5 text-center font-display text-xl font-extrabold sm:text-2xl">
+            {t("form.formHeading")}
+          </h2>
+          <ContactForm />
+        </div>
       </section>
     </div>
   );
