@@ -70,5 +70,169 @@
   "placeholder": {
     "comingSoon": "We're building this section. Check back soon.",
     "backHome": "Back to home"
+  },
+  "servicesPage": {
+    "eyebrow": "SERVICES",
+    "headlineStart": "Services built for businesses that ",
+    "headlineHighlight": "want to grow, not just post",
+    "intro": "Net pricing, no surprises. Every final quote is adjusted to your project's specific scope.",
+    "individualHeading": "Individual services",
+    "individual": {
+      "brandSession": {
+        "title": "Brand photography session",
+        "description": "60–90 min · up to 25 edited photos (equipment, office, portraits)",
+        "price": "$299"
+      },
+      "progressPhoto": {
+        "title": "Job-site progress photography",
+        "description": "30–45 min visit · 15–20 edited photos",
+        "price": "$175"
+      },
+      "finalPhoto": {
+        "title": "Final result photography",
+        "description": "90 min · finished project · up to 30 edited photos",
+        "price": "$325"
+      },
+      "reel": {
+        "title": "Individual reel",
+        "description": "Script + filming + editing · vertical format, up to 45 sec",
+        "price": "$275"
+      },
+      "corporateVideo": {
+        "title": "Corporate horizontal video",
+        "description": "Half-day · interview + b-roll · up to 3 min edited",
+        "price": "$650"
+      },
+      "transformationVideo": {
+        "title": "Progress & transformation video",
+        "description": "Up to 2 visits (start and final result) + narrative edit with text, music and logo · 1.5–3 min",
+        "price": "$850"
+      },
+      "website": {
+        "title": "Essential website",
+        "description": "5 pages · responsive · contact form + WhatsApp Business",
+        "price": "$1,450"
+      },
+      "drone": {
+        "title": "Drone flight (aerial photo/video)",
+        "description": "Coming soon — Part 107 license in progress",
+        "price": "—"
+      }
+    },
+    "plansHeading": "Monthly plans",
+    "plansIntro": "For businesses that want a constant presence all month, not just a one-off delivery. All three plans include professional equipment and full editing; the tier scales with how many active projects you have.",
+    "plans": {
+      "cimiento": {
+        "name": "Foundation",
+        "price": "$650",
+        "period": "/mo",
+        "subtitle": "For handymen and contractors just starting to show their work.",
+        "features": [
+          "1 progress visit per month",
+          "3 edited reels",
+          "Access to selected raw photos"
+        ]
+      },
+      "estructura": {
+        "name": "Structure",
+        "price": "$1,200",
+        "period": "/mo",
+        "subtitle": "For mid-size contractors with active projects all month.",
+        "features": [
+          "2 progress visits",
+          "1 final result photo session",
+          "5 edited reels",
+          "Google Business Profile (photos + posts)"
+        ]
+      },
+      "acabado": {
+        "name": "Finish",
+        "price": "$2,200",
+        "period": "/mo",
+        "subtitle": "Near-complete management of your company's digital presence.",
+        "features": [
+          "4 progress visits",
+          "2 final result photo sessions",
+          "8 edited reels",
+          "2 horizontal videos per month",
+          "Social media + Google Business Profile + WhatsApp Business",
+          "Monthly results report"
+        ]
+      }
+    },
+    "ctaText": "Not sure which plan fits?",
+    "ctaButton": "Let's talk about your project"
+  },
+  "portfolioPage": {
+    "eyebrow": "OUR WORK",
+    "headlineStart": "Projects that ",
+    "headlineHighlight": "speak for themselves",
+    "intro": "We document the progress, show the result, and turn that content into something you can use to win the next project.",
+    "mediaComingSoon": "Gallery coming soon",
+    "cases": {
+      "construccion": {
+        "category": "Construction",
+        "client": "CnC Home Improvement LLC",
+        "description": "Job-site progress documentation and before/after transformation video for renovation projects across the DMV — from progress photography to a final video ready for social media and new-client proposals.",
+        "tags": "Photography · Video · Social Media",
+        "comingSoon": false
+      },
+      "belleza": {
+        "category": "Beauty & Wellness",
+        "description": "We're about to start our first projects in this niche — barbershops and beauty studios across the DMV.",
+        "comingSoon": true
+      },
+      "realEstate": {
+        "category": "Real Estate",
+        "description": "We're about to start our first projects in this niche — photography and video for real estate listings.",
+        "comingSoon": true
+      }
+    },
+    "cta": "Could your project be next?",
+    "ctaButton": "Tell us about your business"
+  },
+  "aboutPage": {
+    "eyebrow": "ABOUT",
+    "headline": "Content held to the same standard as the work it documents",
+    "founderLabel": "Founder",
+    "founderName": "Kevin Ortiz",
+    "storyParagraphs": [
+      "Before founding Ureflect, I worked as a Jr. Project Manager at a remodeling company in the DMV — that's where I learned firsthand what matters to a contractor: that the work looks as good as it actually turned out, and that the content actually helps win the next client, not just look good on social media.",
+      "That experience, combined with a background in content development and technical support, is the foundation of Ureflect: understand the client's business first, then use photography, video, and technology — including AI — to show that work as professionally as possible.",
+      "Today we work with construction, remodeling, and other local service businesses across the DMV, with one standard: professional equipment, on-time delivery, and content you can actually use to sell."
+    ],
+    "equipmentHeading": "Equipment",
+    "equipmentText": "Canon EOS RP camera with wide-aperture professional lenses (50mm f/1.8 and 24–105mm f/4L), iPhone 17 Pro with DJI Osmo Mobile 8 stabilization for smooth motion video, and Godox lighting — the same level of equipment used by content producers across the DMV.",
+    "valuesHeading": "How we work",
+    "steps": {
+      "contact": {
+        "title": "Contact & scope",
+        "description": "We talk through what you need covered: a one-off project or ongoing coverage throughout the job."
+      },
+      "visit": {
+        "title": "Visit or session",
+        "description": "We show up with professional gear — camera, lighting and stabilization — without slowing down your crew."
+      },
+      "delivery": {
+        "title": "Delivery",
+        "description": "You get edited photos and videos, ready to publish or use in proposals, within 3–5 business days."
+      }
+    },
+    "cta": "Want to work with us?",
+    "ctaButton": "Let's talk about your project"
+  },
+  "contactPage": {
+    "eyebrow": "CONTACT",
+    "headline": "Let's talk about your project",
+    "intro": "Tell us what you need covered — a one-off project or ongoing coverage throughout the job. We reply within 24 hours.",
+    "emailLabel": "Email",
+    "emailValue": "kvv7794@gmail.com",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "(202) 431-6197",
+    "whatsappCta": "Message on WhatsApp",
+    "emailCta": "Send an email",
+    "areaLabel": "Service area",
+    "areaValue": "DMV — Washington D.C., Maryland & Virginia",
+    "formNote": "The online contact form is still in progress — for now, reach us directly on WhatsApp or email and you'll get a personal reply."
   }
 }

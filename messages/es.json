@@ -70,5 +70,169 @@
   "placeholder": {
     "comingSoon": "Estamos construyendo esta sección. Vuelve pronto.",
     "backHome": "Volver al inicio"
+  },
+  "servicesPage": {
+    "eyebrow": "SERVICIOS",
+    "headlineStart": "Servicios pensados para negocios que ",
+    "headlineHighlight": "quieren crecer, no solo publicar",
+    "intro": "Precios netos, sin sorpresas. Cada cotización final se ajusta al alcance específico de tu proyecto.",
+    "individualHeading": "Servicios individuales",
+    "individual": {
+      "brandSession": {
+        "title": "Sesión de fotografía de marca",
+        "description": "60–90 min · hasta 25 fotos editadas (equipo, oficina, retratos)",
+        "price": "$299"
+      },
+      "progressPhoto": {
+        "title": "Fotografía de progreso de obra",
+        "description": "Visita de 30–45 min · 15–20 fotos editadas",
+        "price": "$175"
+      },
+      "finalPhoto": {
+        "title": "Fotografía de resultado final",
+        "description": "90 min · proyecto terminado · hasta 30 fotos editadas",
+        "price": "$325"
+      },
+      "reel": {
+        "title": "Reel individual",
+        "description": "Guion + grabación + edición · formato vertical, hasta 45 seg",
+        "price": "$275"
+      },
+      "corporateVideo": {
+        "title": "Video horizontal corporativo",
+        "description": "Medio día · entrevista + b-roll · hasta 3 min editados",
+        "price": "$650"
+      },
+      "transformationVideo": {
+        "title": "Video de progreso y transformación de obra",
+        "description": "Hasta 2 visitas (inicio y resultado final) + edición narrativa con texto, música y logo · 1.5–3 min",
+        "price": "$850"
+      },
+      "website": {
+        "title": "Sitio web esencial",
+        "description": "5 páginas · responsive · formulario + WhatsApp Business",
+        "price": "$1,450"
+      },
+      "drone": {
+        "title": "Vuelo de dron (foto/video aéreo)",
+        "description": "Próximamente — en trámite la licencia Parte 107",
+        "price": "—"
+      }
+    },
+    "plansHeading": "Planes mensuales",
+    "plansIntro": "Para negocios que quieren presencia constante durante el mes, no solo una entrega puntual. Los tres planes incluyen equipo profesional y edición completa; el nivel se ajusta al volumen de proyectos activos que tengas.",
+    "plans": {
+      "cimiento": {
+        "name": "Cimiento",
+        "price": "$650",
+        "period": "/mes",
+        "subtitle": "Para handymen y contratistas que están empezando a mostrar su trabajo.",
+        "features": [
+          "1 visita de progreso de obra al mes",
+          "3 reels editados",
+          "Acceso a fotos crudas seleccionadas"
+        ]
+      },
+      "estructura": {
+        "name": "Estructura",
+        "price": "$1,200",
+        "period": "/mes",
+        "subtitle": "Para constructoras medianas con proyectos activos todo el mes.",
+        "features": [
+          "2 visitas de progreso de obra",
+          "1 fotografía de resultado final",
+          "5 reels editados",
+          "Google Business Profile (fotos + posts)"
+        ]
+      },
+      "acabado": {
+        "name": "Acabado",
+        "price": "$2,200",
+        "period": "/mes",
+        "subtitle": "Gestión casi completa de la presencia digital de tu empresa.",
+        "features": [
+          "4 visitas de progreso de obra",
+          "2 fotografías de resultado final",
+          "8 reels editados",
+          "2 videos horizontales al mes",
+          "Redes sociales + Google Business Profile + WhatsApp Business",
+          "Reporte mensual de resultados"
+        ]
+      }
+    },
+    "ctaText": "¿No sabes cuál plan es para ti?",
+    "ctaButton": "Hablemos de tu proyecto"
+  },
+  "portfolioPage": {
+    "eyebrow": "NUESTRO TRABAJO",
+    "headlineStart": "Proyectos que ",
+    "headlineHighlight": "hablan por sí solos",
+    "intro": "Documentamos el progreso, mostramos el resultado, y convertimos ese contenido en algo que puedas usar para vender el siguiente proyecto.",
+    "mediaComingSoon": "Galería en camino",
+    "cases": {
+      "construccion": {
+        "category": "Construcción",
+        "client": "CnC Home Improvement LLC",
+        "description": "Documentación de progreso de obra y video de transformación antes/después para proyectos de renovación en el DMV — desde fotografía de avance hasta el video final listo para redes sociales y propuestas a nuevos clientes.",
+        "tags": "Fotografía · Video · Redes Sociales",
+        "comingSoon": false
+      },
+      "belleza": {
+        "category": "Belleza & Wellness",
+        "description": "Estamos por comenzar nuestros primeros proyectos en este nicho — barberías y centros estéticos del DMV.",
+        "comingSoon": true
+      },
+      "realEstate": {
+        "category": "Real Estate",
+        "description": "Estamos por comenzar nuestros primeros proyectos en este nicho — fotografía y video para listados inmobiliarios.",
+        "comingSoon": true
+      }
+    },
+    "cta": "¿Tu proyecto podría ser el siguiente?",
+    "ctaButton": "Cuéntanos de tu negocio"
+  },
+  "aboutPage": {
+    "eyebrow": "NOSOTROS",
+    "headline": "Contenido con el mismo nivel de exigencia con el que se construye",
+    "founderLabel": "Fundador",
+    "founderName": "Kevin Ortiz",
+    "storyParagraphs": [
+      "Antes de fundar Ureflect, trabajé como Project Manager Jr. en una empresa de remodelación en el DMV — ahí aprendí de primera mano lo que le importa a un contratista: que el trabajo se vea tan bien como realmente quedó, y que ese contenido sirva para conseguir el siguiente cliente, no solo para \"quedar bien\" en redes.",
+      "Esa experiencia, combinada con formación en desarrollo de contenido y soporte técnico, es la base de Ureflect: entender el negocio del cliente primero, y usar fotografía, video y tecnología — incluida inteligencia artificial — para mostrar ese trabajo de la forma más profesional posible.",
+      "Hoy trabajamos con negocios de construcción, remodelación y otros servicios locales en el DMV, con un mismo estándar: equipo profesional, entregas puntuales, y contenido que realmente se puede usar para vender."
+    ],
+    "equipmentHeading": "Equipo",
+    "equipmentText": "Cámara Canon EOS RP con lentes profesionales de apertura amplia (50mm f/1.8 y 24–105mm f/4L), iPhone 17 Pro con estabilización DJI Osmo Mobile 8 para video fluido en movimiento, e iluminación Godox — el mismo nivel de equipo que usan las productoras de contenido del DMV.",
+    "valuesHeading": "Cómo trabajamos",
+    "steps": {
+      "contact": {
+        "title": "Contacto y alcance",
+        "description": "Conversamos qué necesitas cubrir: un proyecto puntual o presencia constante durante toda la obra."
+      },
+      "visit": {
+        "title": "Visita o sesión",
+        "description": "Llegamos al sitio con equipo profesional — cámara, iluminación y estabilización — sin interrumpir el trabajo del equipo de obra."
+      },
+      "delivery": {
+        "title": "Entrega",
+        "description": "Recibes las fotos y videos editados, listos para publicar o usar en propuestas, en un plazo de 3–5 días hábiles."
+      }
+    },
+    "cta": "¿Quieres trabajar con nosotros?",
+    "ctaButton": "Hablemos de tu proyecto"
+  },
+  "contactPage": {
+    "eyebrow": "CONTACTO",
+    "headline": "Hablemos de tu proyecto",
+    "intro": "Cuéntanos qué necesitas cubrir — un proyecto puntual o presencia constante durante toda la obra. Respondemos en menos de 24 horas.",
+    "emailLabel": "Correo",
+    "emailValue": "kvv7794@gmail.com",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "(202) 431-6197",
+    "whatsappCta": "Escribir por WhatsApp",
+    "emailCta": "Escribir un correo",
+    "areaLabel": "Zona de servicio",
+    "areaValue": "DMV — Washington D.C., Maryland y Virginia",
+    "formNote": "El formulario de contacto en línea está en construcción — por ahora, escríbenos directo por WhatsApp o correo y te respondemos personalmente."
   }
 }
