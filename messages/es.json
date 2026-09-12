@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "cta": "Hablemos"
+  },
+  "hero": {
+    "eyebrow": "CONTENIDO · DIGITAL · GROWTH",
+    "headlineStart": "Hacemos que tu negocio se vea tan profesional como ",
+    "headlineHighlight": "realmente es.",
+    "subcopy": "Contenido visual, presencia digital y estrategia para negocios que quieren crecer.",
+    "primaryCta": "Hablemos de tu proyecto",
+    "secondaryCta": "Ver nuestro trabajo",
+    "tagConstruccion": "CONSTRUCCIÓN Y REMODELACIÓN",
+    "tagBelleza": "BELLEZA & WELLNESS",
+    "tagRealEstate": "REAL ESTATE",
+    "tagRedes": "TU MARCA TAMBIÉN EN REDES"
+  },
+  "services": {
+    "eyebrow": "NUESTROS SERVICIOS",
+    "headlineStart": "Todo lo que tu negocio necesita ",
+    "headlineHighlight": "para crecer",
+    "intro": "Creamos soluciones visuales y digitales que conectan con tu audiencia, fortalecen tu marca y generan resultados reales. Todo en un solo lugar.",
+    "items": {
+      "content": {
+        "title": "Contenido Visual",
+        "description": "Fotografía y video profesional para mostrar lo mejor de tu negocio."
+      },
+      "social": {
+        "title": "Redes Sociales",
+        "description": "Estrategia y gestión de contenido para aumentar tu visibilidad y engagement."
+      },
+      "presence": {
+        "title": "Presencia Digital",
+        "description": "Google Business, WhatsApp Business y más. Te ayudamos a ser encontrado y a generar confianza."
+      },
+      "web": {
+        "title": "Web & Branding",
+        "description": "Páginas web, diseño de marca y material visual que transmite profesionalismo."
+      }
+    }
+  },
+  "techBanner": {
+    "headline": "Creatividad + tecnología + IA",
+    "description": "Combinamos el talento de nuestro equipo creativo con herramientas de inteligencia artificial para producir contenido más rápido, eficiente y de alta calidad."
+  },
+  "portfolio": {
+    "eyebrow": "NUESTRO TRABAJO",
+    "headlineStart": "Proyectos que ",
+    "headlineHighlight": "hablan por sí solos",
+    "viewAll": "Ver portafolio completo",
+    "servicesTag": "Fotografía · Video · Redes Sociales",
+    "items": {
+      "construction": "Construcción",
+      "beauty": "Belleza & Wellness",
+      "realEstate": "Real Estate"
+    }
+  },
+  "footer": {
+    "tagline": "Tu negocio, con una presencia digital que refleja su verdadero valor.",
+    "photography": "Fotografía / Video",
+    "social": "Redes Sociales",
+    "web": "Sitios Web / Plataformas",
+    "ai": "IA + Estrategia",
+    "rights": "Todos los derechos reservados."
+  },
+  "placeholder": {
+    "comingSoon": "Estamos construyendo esta sección. Vuelve pronto.",
+    "backHome": "Volver al inicio"
+  }
+}
