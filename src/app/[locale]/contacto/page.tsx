@@ -53,7 +53,7 @@ export default async function ContactoPage() {
               {t("emailValue")}
             </span>
             <a
-              href="mailto:kvv7794@gmail.com"
+              href="mailto:contact@ureflect.net"
               className="mt-6 inline-block rounded-full border border-brand-black/20 px-5 py-2.5 text-center text-sm font-semibold transition-colors hover:bg-brand-black hover:text-white"
             >
               {t("emailCta")} →
