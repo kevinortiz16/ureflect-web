@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -52,6 +53,8 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   const messages = await getMessages();
 
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
   return (
     <html lang={locale}>
       <body className="flex min-h-screen flex-col bg-white text-brand-black antialiased">
@@ -60,6 +63,13 @@ export default async function LocaleLayout({ children, params }: Props) {
           <main className="flex-1">{children}</main>
           <Footer />
         </NextIntlClientProvider>
+        {/* Solo carga Google Analytics si hay un ID configurado Y estamos
+            en producción — así las visitas de desarrollo (localhost,
+            recargas mientras programamos) nunca contaminan los datos
+            reales del sitio. */}
+        {gaId && process.env.NODE_ENV === "production" && (
+          <GoogleAnalytics gaId={gaId} />
+        )}
       </body>
     </html>
   );
