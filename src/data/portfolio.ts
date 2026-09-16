@@ -26,7 +26,18 @@ export type PortfolioCaseMedia = {
 };
 
 export const portfolioMedia: Record<PortfolioCaseKey, PortfolioCaseMedia> = {
-  construccion: {},
+  construccion: {
+    // Renovación de 4 baños en Rockville, MD — para CnC Home Improvement.
+    // El video es el testimonio del cliente; las fotos son el resultado
+    // final de cada baño.
+    youtubeIds: ["sSkk5C2vdL4"],
+    photos: [
+      "/portfolio/construccion/cover.jpg",
+      "/portfolio/construccion/photo-1.jpg",
+      "/portfolio/construccion/photo-2.jpg",
+      "/portfolio/construccion/photo-3.jpg",
+    ],
+  },
   belleza: {},
   realEstate: {},
   producto: {},
