@@ -81,7 +81,24 @@ export const portfolioCatalog: Record<PortfolioCategoryKey, PortfolioCompany[]> 
     },
   ],
   belleza: [],
-  realEstate: [],
+  realEstate: [
+    {
+      id: "cliente-confidencial",
+      name: "Cliente confidencial",
+      jobs: [
+        {
+          id: "casa-arlington-va",
+          cover: "/portfolio/real-estate/cliente-confidencial/casa-arlington-va/cover.jpg",
+          photos: [
+            "/portfolio/real-estate/cliente-confidencial/casa-arlington-va/photo-1.jpg",
+            "/portfolio/real-estate/cliente-confidencial/casa-arlington-va/photo-2.jpg",
+            "/portfolio/real-estate/cliente-confidencial/casa-arlington-va/photo-3.jpg",
+            "/portfolio/real-estate/cliente-confidencial/casa-arlington-va/photo-4.jpg",
+          ],
+        },
+      ],
+    },
+  ],
   producto: [
     {
       id: "gavatt",

@@ -292,6 +292,14 @@
           "description": "Fotografía de producto en exteriores para la colección de la marca de moda Gavatt."
         }
       }
+    },
+    "realEstate": {
+      "cliente-confidencial": {
+        "casa-arlington-va": {
+          "title": "Fotografía de interiores — Arlington, VA",
+          "description": "Fotografía de interiores de una vivienda residencial en Arlington, VA (cliente confidencial)."
+        }
+      }
     }
   }
 }

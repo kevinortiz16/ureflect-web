@@ -292,6 +292,14 @@
           "description": "On-location product photography for the Gavatt fashion brand's collection."
         }
       }
+    },
+    "realEstate": {
+      "cliente-confidencial": {
+        "casa-arlington-va": {
+          "title": "Interior Photography — Arlington, VA",
+          "description": "Interior photography of a residential property in Arlington, VA (confidential client)."
+        }
+      }
     }
   }
 }
