@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -27,6 +27,12 @@ export const metadata: Metadata = {
   title: "Ureflect | Content · Digital · Growth",
   description:
     "Contenido visual, presencia digital y estrategia para negocios que quieren crecer en el DMV.",
+};
+
+// Color de la barra del navegador en móvil (Android/Chrome) al abrir el
+// sitio — usamos el Negro Carbón oficial de la marca.
+export const viewport: Viewport = {
+  themeColor: "#111315",
 };
 
 // Pre-render /es and /en at build time instead of on first request.

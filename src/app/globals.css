@@ -8,13 +8,18 @@
  * (--font-display -> font-display). No tailwind.config.js needed.
  */
 @theme inline {
-  /* Ureflect brand palette, taken from the isotipo/brand sheet */
-  --color-brand-blue: #00b4ff;
-  --color-brand-blue-dark: #0090cc;
-  --color-brand-black: #0b0b0e;
-  --color-brand-ink: #05070d;
+  /* Ureflect brand palette — colores oficiales de la hoja de marca
+     entregada por el diseñador (02_Diseno_y_Logo/PRESENATCION_LOGO_ES.pdf):
+     Azul eléctrico, Cian, Negro Carbón y Blanco Marfil. Antes de tener el
+     logo real usamos un azul aproximado (#00b4ff); esto lo reemplaza por
+     el HEX exacto de la marca. */
+  --color-brand-blue: #212bfd; /* Azul eléctrico */
+  --color-brand-blue-dark: #1a22ca; /* Azul eléctrico, oscurecido ~20% para hover/estados */
+  --color-brand-cyan: #01e5f7; /* Cian — el otro extremo del degradado del isotipo */
+  --color-brand-black: #111315; /* Negro Carbón */
+  --color-brand-ink: #090a0c; /* variante aún más oscura del Negro Carbón, para fondos de sección */
   --color-brand-white: #ffffff;
-  --color-brand-surface: #f5f7fa;
+  --color-brand-surface: #f5f4f0; /* Blanco Marfil */
   --color-brand-muted: #6b7280;
 
   /* Manrope = headings (close in spirit to Avenir Next: geometric,
