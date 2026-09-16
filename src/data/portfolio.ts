@@ -84,22 +84,6 @@ export const portfolioCatalog: Record<PortfolioCategoryKey, PortfolioCompany[]> 
   realEstate: [],
   producto: [
     {
-      id: "fajate",
-      name: "Fajate",
-      jobs: [
-        {
-          id: "sesion-producto-maryland",
-          cover: "/portfolio/producto/fajate/sesion-producto-maryland/cover.jpg",
-          photos: [
-            "/portfolio/producto/fajate/sesion-producto-maryland/photo-1.jpg",
-            "/portfolio/producto/fajate/sesion-producto-maryland/photo-2.jpg",
-            "/portfolio/producto/fajate/sesion-producto-maryland/photo-3.jpg",
-            "/portfolio/producto/fajate/sesion-producto-maryland/photo-4.jpg",
-          ],
-        },
-      ],
-    },
-    {
       id: "gavatt",
       name: "Gavatt",
       jobs: [
@@ -111,6 +95,22 @@ export const portfolioCatalog: Record<PortfolioCategoryKey, PortfolioCompany[]> 
             "/portfolio/producto/gavatt/sesion-moda-nueva-york/photo-2.jpg",
             "/portfolio/producto/gavatt/sesion-moda-nueva-york/photo-3.jpg",
             "/portfolio/producto/gavatt/sesion-moda-nueva-york/photo-4.jpg",
+          ],
+        },
+      ],
+    },
+    {
+      id: "fajate",
+      name: "Fajate",
+      jobs: [
+        {
+          id: "sesion-producto-maryland",
+          cover: "/portfolio/producto/fajate/sesion-producto-maryland/cover.jpg",
+          photos: [
+            "/portfolio/producto/fajate/sesion-producto-maryland/photo-1.jpg",
+            "/portfolio/producto/fajate/sesion-producto-maryland/photo-2.jpg",
+            "/portfolio/producto/fajate/sesion-producto-maryland/photo-3.jpg",
+            "/portfolio/producto/fajate/sesion-producto-maryland/photo-4.jpg",
           ],
         },
       ],
