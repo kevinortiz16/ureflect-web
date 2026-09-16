@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import YouTubeEmbed from "@/components/youtube-embed";
 import { portfolioMedia, type PortfolioCaseKey } from "@/data/portfolio";
 
-const caseKeys: PortfolioCaseKey[] = ["construccion", "belleza", "realEstate"];
+const caseKeys: PortfolioCaseKey[] = ["construccion", "belleza", "realEstate", "producto"];
 
 type CaseCopy = {
   category: string;

@@ -56,7 +56,8 @@
     "items": {
       "construction": "Construction",
       "beauty": "Beauty & Wellness",
-      "realEstate": "Real Estate"
+      "realEstate": "Real Estate",
+      "product": "Product Photography"
     }
   },
   "footer": {
@@ -186,6 +187,12 @@
         "category": "Real Estate",
         "description": "We're about to start our first projects in this niche — photography and video for real estate listings.",
         "comingSoon": true
+      },
+      "producto": {
+        "category": "Product Photography",
+        "description": "Product photography for clothing brands and businesses selling physical products: from studio catalog shots to on-location sessions with a model, ready for online stores and social media.",
+        "tags": "Product Photography · E-commerce · Social Media",
+        "comingSoon": false
       }
     },
     "cta": "Could your project be next?",

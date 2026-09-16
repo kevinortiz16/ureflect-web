@@ -16,7 +16,7 @@
  * sigue mostrando el estado "Galería en camino" (mediaComingSoon) que ya
  * existe en las traducciones.
  */
-export type PortfolioCaseKey = "construccion" | "belleza" | "realEstate";
+export type PortfolioCaseKey = "construccion" | "belleza" | "realEstate" | "producto";
 
 export type PortfolioCaseMedia = {
   /** IDs (no URLs completas) de videos de YouTube, en el orden que se quieran mostrar. */
@@ -29,4 +29,5 @@ export const portfolioMedia: Record<PortfolioCaseKey, PortfolioCaseMedia> = {
   construccion: {},
   belleza: {},
   realEstate: {},
+  producto: {},
 };

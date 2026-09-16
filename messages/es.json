@@ -56,7 +56,8 @@
     "items": {
       "construction": "Construcción",
       "beauty": "Belleza & Wellness",
-      "realEstate": "Real Estate"
+      "realEstate": "Real Estate",
+      "product": "Fotografía de Producto"
     }
   },
   "footer": {
@@ -186,6 +187,12 @@
         "category": "Real Estate",
         "description": "Estamos por comenzar nuestros primeros proyectos en este nicho — fotografía y video para listados inmobiliarios.",
         "comingSoon": true
+      },
+      "producto": {
+        "category": "Fotografía de Producto",
+        "description": "Fotografía de producto para marcas de ropa y negocios que venden productos físicos: desde catálogo en estudio hasta sesiones en exteriores con modelo, listas para tienda en línea y redes sociales.",
+        "tags": "Fotografía de Producto · E-commerce · Redes Sociales",
+        "comingSoon": false
       }
     },
     "cta": "¿Tu proyecto podría ser el siguiente?",

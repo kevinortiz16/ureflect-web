@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
-const portfolioKeys = ["construction", "beauty", "realEstate"] as const;
+const portfolioKeys = ["construction", "beauty", "realEstate", "product"] as const;
 
 export default function PortfolioSection() {
   const t = useTranslations("portfolio");
@@ -28,7 +28,7 @@ export default function PortfolioSection() {
           </Link>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {portfolioKeys.map((key) => (
             <div
               key={key}
