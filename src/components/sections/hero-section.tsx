@@ -1,8 +1,14 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import { getCategoryCover } from "@/data/portfolio";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+
+  const construccionCover = getCategoryCover("construccion");
+  const realEstateCover = getCategoryCover("realEstate");
+  const productoCover = getCategoryCover("producto");
 
   return (
     <section className="relative overflow-hidden bg-brand-ink">
@@ -41,24 +47,85 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Visual side: stacked category cards, standing in for the
-            photo collage in the reference mockup until we have final
-            client photography approved for the public site. */}
+        {/* Visual side: category cards. Categorías con trabajos ya
+            cargados muestran su foto "portada" real; las que todavía
+            no tienen material (por ejemplo Real Estate) muestran el
+            degradado de respaldo. */}
         <div className="grid grid-cols-2 gap-4">
-          <div className="col-span-2 flex h-40 items-end rounded-2xl bg-gradient-to-br from-brand-blue/30 to-brand-blue/5 p-4 ring-1 ring-white/10 sm:h-48">
-            <span className="text-xs font-semibold tracking-wide text-white/80">
-              {t("tagConstruccion")}
-            </span>
+          <div className="relative col-span-2 h-40 overflow-hidden rounded-2xl ring-1 ring-white/10 sm:h-48">
+            {construccionCover ? (
+              <Image
+                src={construccionCover}
+                alt=""
+                fill
+                sizes="(min-width: 1024px) 40vw, 90vw"
+                className="object-cover"
+                priority
+              />
+            ) : null}
+            <div
+              aria-hidden="true"
+              className={
+                construccionCover
+                  ? "absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"
+                  : "absolute inset-0 bg-gradient-to-br from-brand-blue/30 to-brand-blue/5"
+              }
+            />
+            <div className="absolute inset-0 flex items-end p-4">
+              <span className="text-xs font-semibold tracking-wide text-white/90">
+                {t("tagConstruccion")}
+              </span>
+            </div>
           </div>
-          <div className="flex h-32 items-end rounded-2xl bg-white/5 p-4 ring-1 ring-white/10 sm:h-40">
-            <span className="text-xs font-semibold tracking-wide text-white/70">
-              {t("tagBelleza")}
-            </span>
+
+          <div className="relative h-32 overflow-hidden rounded-2xl ring-1 ring-white/10 sm:h-40">
+            {realEstateCover ? (
+              <Image
+                src={realEstateCover}
+                alt=""
+                fill
+                sizes="20vw"
+                className="object-cover"
+              />
+            ) : null}
+            <div
+              aria-hidden="true"
+              className={
+                realEstateCover
+                  ? "absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"
+                  : "absolute inset-0 bg-white/5"
+              }
+            />
+            <div className="absolute inset-0 flex items-end p-4">
+              <span className="text-xs font-semibold tracking-wide text-white/80">
+                {t("tagRealEstate")}
+              </span>
+            </div>
           </div>
-          <div className="flex h-32 items-end rounded-2xl bg-white/5 p-4 ring-1 ring-white/10 sm:h-40">
-            <span className="text-xs font-semibold tracking-wide text-white/70">
-              {t("tagRealEstate")}
-            </span>
+
+          <div className="relative h-32 overflow-hidden rounded-2xl ring-1 ring-white/10 sm:h-40">
+            {productoCover ? (
+              <Image
+                src={productoCover}
+                alt=""
+                fill
+                sizes="20vw"
+                className="object-cover"
+              />
+            ) : null}
+            <div
+              aria-hidden="true"
+              className={
+                productoCover
+                  ? "absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"
+                  : "absolute inset-0 bg-white/5"
+              }
+            />
+            <div className="absolute inset-0 flex items-end p-4">
+              <span className="text-xs font-semibold tracking-wide text-white/80">
+                {t("tagProducto")}
+              </span>
+            </div>
           </div>
         </div>
       </div>

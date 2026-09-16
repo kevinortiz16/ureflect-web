@@ -131,3 +131,19 @@ export function getAllCovers(): string[] {
     companies.flatMap((company) => company.jobs.map((job) => job.cover))
   );
 }
+
+/**
+ * La primera foto "portada" disponible dentro de una categoría —
+ * para las tarjetas de categoría en la página de inicio (hero y
+ * teaser de portafolio). Devuelve undefined si la categoría todavía
+ * no tiene ningún trabajo cargado (por ejemplo, Belleza o Real Estate
+ * por ahora).
+ */
+export function getCategoryCover(categoryKey: PortfolioCategoryKey): string | undefined {
+  for (const company of portfolioCatalog[categoryKey]) {
+    for (const job of company.jobs) {
+      if (job.cover) return job.cover;
+    }
+  }
+  return undefined;
+}

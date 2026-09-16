@@ -1,18 +1,21 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { categorySlugs } from "@/data/portfolio";
+import { categorySlugs, getCategoryCover, type PortfolioCategoryKey } from "@/data/portfolio";
 
-const portfolioKeys = ["construction", "beauty", "realEstate", "product"] as const;
+// Belleza & Wellness va al final porque todavía no tiene trabajos
+// cargados; el resto va en el orden en el que sí hay material real.
+const portfolioKeys = ["construction", "realEstate", "product", "beauty"] as const;
 
 // El teaser del home usa sus propias keys en inglés (legado); el catálogo
 // real usa otras keys internas. Este mapa conecta cada tarjeta con la
 // categoría/slug de página correcta en /portafolio/[categoria].
-const teaserKeyToCategorySlug = {
-  construction: categorySlugs.construccion,
-  beauty: categorySlugs.belleza,
-  realEstate: categorySlugs.realEstate,
-  product: categorySlugs.producto,
-} as const;
+const teaserKeyToCategoryKey: Record<(typeof portfolioKeys)[number], PortfolioCategoryKey> = {
+  construction: "construccion",
+  beauty: "belleza",
+  realEstate: "realEstate",
+  product: "producto",
+};
 
 export default function PortfolioSection() {
   const t = useTranslations("portfolio");
@@ -40,28 +43,42 @@ export default function PortfolioSection() {
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {portfolioKeys.map((key) => (
-            <Link
-              key={key}
-              href={`/portafolio/${teaserKeyToCategorySlug[key]}`}
-              className="group relative flex h-72 flex-col justify-end overflow-hidden rounded-2xl bg-brand-ink p-6 ring-1 ring-black/10 transition-transform hover:scale-[1.02]"
-            >
-              <div
-                aria-hidden="true"
-                className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity group-hover:opacity-90"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute -right-6 -top-6 h-32 w-32 rounded-full bg-brand-blue/20 blur-2xl"
-              />
-              <div className="relative">
-                <h3 className="font-display text-lg font-bold text-white">
-                  {t(`items.${key}`)}
-                </h3>
-                <p className="mt-1 text-xs text-white/60">{t("servicesTag")}</p>
-              </div>
-            </Link>
-          ))}
+          {portfolioKeys.map((key) => {
+            const categoryKey = teaserKeyToCategoryKey[key];
+            const cover = getCategoryCover(categoryKey);
+
+            return (
+              <Link
+                key={key}
+                href={`/portafolio/${categorySlugs[categoryKey]}`}
+                className="group relative flex h-72 flex-col justify-end overflow-hidden rounded-2xl bg-brand-ink p-6 ring-1 ring-black/10 transition-transform hover:scale-[1.02]"
+              >
+                {cover ? (
+                  <Image
+                    src={cover}
+                    alt=""
+                    fill
+                    sizes="(min-width: 1024px) 25vw, 45vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : null}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity group-hover:opacity-90"
+                />
+                <div
+                  aria-hidden="true"
+                  className="absolute -right-6 -top-6 h-32 w-32 rounded-full bg-brand-blue/20 blur-2xl"
+                />
+                <div className="relative">
+                  <h3 className="font-display text-lg font-bold text-white">
+                    {t(`items.${key}`)}
+                  </h3>
+                  <p className="mt-1 text-xs text-white/60">{t("servicesTag")}</p>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
