@@ -271,6 +271,24 @@
         "renovacion-4-banos-rockville": {
           "title": "4-Bathroom Renovation — Rockville, MD",
           "description": "Final-result photography for each bathroom and a client testimonial video."
+        },
+        "kitchen-renovation-church-falls": {
+          "title": "Kitchen Remodel — Falls Church, VA",
+          "description": "Before-and-after photography of the full kitchen remodel and a video of the finished project."
+        }
+      }
+    },
+    "producto": {
+      "fajate": {
+        "sesion-producto-maryland": {
+          "title": "Product Photography Session — Fajate",
+          "description": "Product photography for Fajate's shapewear line, shot in Maryland."
+        }
+      },
+      "gavatt": {
+        "sesion-moda-nueva-york": {
+          "title": "Outdoor Fashion Session — Gavatt",
+          "description": "On-location product photography for the Gavatt fashion brand's collection."
         }
       }
     }

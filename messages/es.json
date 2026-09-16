@@ -271,6 +271,24 @@
         "renovacion-4-banos-rockville": {
           "title": "Renovación de 4 baños — Rockville, MD",
           "description": "Fotografía del resultado final de cada baño y video testimonio del cliente."
+        },
+        "kitchen-renovation-church-falls": {
+          "title": "Remodelación de cocina — Falls Church, VA",
+          "description": "Fotografía del antes y después de la remodelación completa de cocina y video del proyecto terminado."
+        }
+      }
+    },
+    "producto": {
+      "fajate": {
+        "sesion-producto-maryland": {
+          "title": "Sesión de fotografía de producto — Fajate",
+          "description": "Fotografía de producto para la línea de fajas de Fajate, en Maryland."
+        }
+      },
+      "gavatt": {
+        "sesion-moda-nueva-york": {
+          "title": "Sesión de moda en exteriores — Gavatt",
+          "description": "Fotografía de producto en exteriores para la colección de la marca de moda Gavatt."
         }
       }
     }

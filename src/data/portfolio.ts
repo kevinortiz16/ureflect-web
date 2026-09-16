@@ -65,12 +65,57 @@ export const portfolioCatalog: Record<PortfolioCategoryKey, PortfolioCompany[]> 
           ],
           youtubeIds: ["sSkk5C2vdL4"],
         },
+        {
+          id: "kitchen-renovation-church-falls",
+          cover:
+            "/portfolio/construccion/cnc-home-improvement/kitchen-renovation-church-falls/cover.jpg",
+          photos: [
+            "/portfolio/construccion/cnc-home-improvement/kitchen-renovation-church-falls/photo-1.jpg",
+            "/portfolio/construccion/cnc-home-improvement/kitchen-renovation-church-falls/photo-2.jpg",
+            "/portfolio/construccion/cnc-home-improvement/kitchen-renovation-church-falls/photo-3.jpg",
+            "/portfolio/construccion/cnc-home-improvement/kitchen-renovation-church-falls/photo-4.jpg",
+          ],
+          youtubeIds: ["GL7e1T-COrY"],
+        },
       ],
     },
   ],
   belleza: [],
   realEstate: [],
-  producto: [],
+  producto: [
+    {
+      id: "fajate",
+      name: "Fajate",
+      jobs: [
+        {
+          id: "sesion-producto-maryland",
+          cover: "/portfolio/producto/fajate/sesion-producto-maryland/cover.jpg",
+          photos: [
+            "/portfolio/producto/fajate/sesion-producto-maryland/photo-1.jpg",
+            "/portfolio/producto/fajate/sesion-producto-maryland/photo-2.jpg",
+            "/portfolio/producto/fajate/sesion-producto-maryland/photo-3.jpg",
+            "/portfolio/producto/fajate/sesion-producto-maryland/photo-4.jpg",
+          ],
+        },
+      ],
+    },
+    {
+      id: "gavatt",
+      name: "Gavatt",
+      jobs: [
+        {
+          id: "sesion-moda-nueva-york",
+          cover: "/portfolio/producto/gavatt/sesion-moda-nueva-york/cover.jpg",
+          photos: [
+            "/portfolio/producto/gavatt/sesion-moda-nueva-york/photo-1.jpg",
+            "/portfolio/producto/gavatt/sesion-moda-nueva-york/photo-2.jpg",
+            "/portfolio/producto/gavatt/sesion-moda-nueva-york/photo-3.jpg",
+            "/portfolio/producto/gavatt/sesion-moda-nueva-york/photo-4.jpg",
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 export function getCompany(
