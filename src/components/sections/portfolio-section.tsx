@@ -1,7 +1,18 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { categorySlugs } from "@/data/portfolio";
 
 const portfolioKeys = ["construction", "beauty", "realEstate", "product"] as const;
+
+// El teaser del home usa sus propias keys en inglés (legado); el catálogo
+// real usa otras keys internas. Este mapa conecta cada tarjeta con la
+// categoría/slug de página correcta en /portafolio/[categoria].
+const teaserKeyToCategorySlug = {
+  construction: categorySlugs.construccion,
+  beauty: categorySlugs.belleza,
+  realEstate: categorySlugs.realEstate,
+  product: categorySlugs.producto,
+} as const;
 
 export default function PortfolioSection() {
   const t = useTranslations("portfolio");
@@ -30,9 +41,10 @@ export default function PortfolioSection() {
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {portfolioKeys.map((key) => (
-            <div
+            <Link
               key={key}
-              className="group relative flex h-72 flex-col justify-end overflow-hidden rounded-2xl bg-brand-ink p-6 ring-1 ring-black/10"
+              href={`/portafolio/${teaserKeyToCategorySlug[key]}`}
+              className="group relative flex h-72 flex-col justify-end overflow-hidden rounded-2xl bg-brand-ink p-6 ring-1 ring-black/10 transition-transform hover:scale-[1.02]"
             >
               <div
                 aria-hidden="true"
@@ -48,7 +60,7 @@ export default function PortfolioSection() {
                 </h3>
                 <p className="mt-1 text-xs text-white/60">{t("servicesTag")}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

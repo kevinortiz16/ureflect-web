@@ -169,30 +169,22 @@
     "headlineStart": "Proyectos que ",
     "headlineHighlight": "hablan por sí solos",
     "intro": "Documentamos el progreso, mostramos el resultado, y convertimos ese contenido en algo que puedas usar para vender el siguiente proyecto.",
-    "mediaComingSoon": "Galería en camino",
-    "cases": {
+    "categories": {
       "construccion": {
-        "category": "Construcción",
-        "client": "CnC Home Improvement LLC",
-        "description": "Documentación de progreso de obra y video de transformación antes/después para proyectos de renovación en el DMV — desde fotografía de avance hasta el video final listo para redes sociales y propuestas a nuevos clientes.",
-        "tags": "Fotografía · Video · Redes Sociales",
-        "comingSoon": false
+        "label": "Construcción",
+        "description": "Documentación de progreso de obra y video de transformación antes/después para proyectos de renovación en el DMV."
       },
       "belleza": {
-        "category": "Belleza & Wellness",
-        "description": "Estamos por comenzar nuestros primeros proyectos en este nicho — barberías y centros estéticos del DMV.",
-        "comingSoon": true
+        "label": "Belleza & Wellness",
+        "description": "Fotografía y video para barberías y centros estéticos del DMV."
       },
       "realEstate": {
-        "category": "Real Estate",
-        "description": "Estamos por comenzar nuestros primeros proyectos en este nicho — fotografía y video para listados inmobiliarios.",
-        "comingSoon": true
+        "label": "Real Estate",
+        "description": "Fotografía y video para listados inmobiliarios."
       },
       "producto": {
-        "category": "Fotografía de Producto",
-        "description": "Fotografía de producto para marcas de ropa y negocios que venden productos físicos: desde catálogo en estudio hasta sesiones en exteriores con modelo, listas para tienda en línea y redes sociales.",
-        "tags": "Fotografía de Producto · E-commerce · Redes Sociales",
-        "comingSoon": false
+        "label": "Fotografía de Producto",
+        "description": "Fotografía de producto para marcas de ropa y negocios que venden productos físicos."
       }
     },
     "cta": "¿Tu proyecto podría ser el siguiente?",
@@ -260,6 +252,27 @@
       "errorTitle": "Algo salió mal",
       "errorBody": "No pudimos enviar tu mensaje. Intenta de nuevo o escríbenos por WhatsApp.",
       "requiredNote": "* Campos obligatorios"
+    }
+  },
+  "portfolioNav": {
+    "backToPortfolio": "← Volver al portafolio",
+    "backToCategory": "← Volver a {category}",
+    "companiesHeading": "Empresas con las que hemos trabajado",
+    "jobsHeading": "Trabajos realizados",
+    "jobCount": "{count, plural, one {# proyecto} other {# proyectos}}",
+    "emptyCategory": "Todavía no tenemos proyectos publicados en esta categoría — ¡vuelve pronto!",
+    "watchVideo": "Ver video",
+    "companyCount": "{count, plural, one {# empresa} other {# empresas}}",
+    "comingSoon": "Próximamente"
+  },
+  "portfolioJobs": {
+    "construccion": {
+      "cnc-home-improvement": {
+        "renovacion-4-banos-rockville": {
+          "title": "Renovación de 4 baños — Rockville, MD",
+          "description": "Fotografía del resultado final de cada baño y video testimonio del cliente."
+        }
+      }
     }
   }
 }

@@ -1,44 +1,88 @@
 /**
- * Contenido real (fotos/video) de cada caso del portafolio, separado de
- * las traducciones (messages/es.json y en.json) a propósito: el texto
- * (categoría, cliente, descripción) SÍ depende del idioma, pero las
- * fotos y los IDs de YouTube son los mismos sin importar el idioma, así
- * que no tiene sentido duplicarlos en los dos archivos de traducción.
+ * Catálogo del portafolio: Categoría → Empresa/Cliente → Trabajo.
+ * Separado de las traducciones (messages/es.json y en.json) a propósito:
+ * las rutas de fotos, IDs de YouTube y la jerarquía no dependen del
+ * idioma, pero el título/descripción de cada trabajo sí (ver
+ * messages/es.json → portfolioJobs, misma forma que este catálogo).
  *
- * Cómo llenarlo:
- * - youtubeIds: el ID del video de YouTube (lo que va después de
- *   "watch?v=" en la URL, ej. "dQw4w9WgXcQ"). No hace falta el link
- *   completo.
- * - photos: rutas dentro de /public/portfolio/<caso>/... Cuando Kevin
- *   tenga las fotos finales listas, se optimizan y se agregan aquí.
- *
- * Mientras un caso no tenga ni fotos ni video, la página de Portafolio
- * sigue mostrando el estado "Galería en camino" (mediaComingSoon) que ya
- * existe en las traducciones.
+ * Cómo se llena:
+ * - Cada trabajo necesita "cover" (la foto "portada" de esa carpeta en
+ *   06_Portafolio — debe ser horizontal, se usa también en el carrusel
+ *   del hero de /portafolio).
+ * - "photos": fotos adicionales de ese trabajo (cualquier orientación).
+ * - "youtubeIds": IDs (no URLs completas) de YouTube, si hay video.
+ * - Todas las rutas de imagen apuntan a /public/portfolio/<categoria>/<empresa>/<trabajo>/...
  */
-export type PortfolioCaseKey = "construccion" | "belleza" | "realEstate" | "producto";
 
-export type PortfolioCaseMedia = {
-  /** IDs (no URLs completas) de videos de YouTube, en el orden que se quieran mostrar. */
-  youtubeIds?: string[];
-  /** Rutas de fotos dentro de /public/portfolio/<caso>/. */
+export type PortfolioCategoryKey = "construccion" | "belleza" | "realEstate" | "producto";
+
+// Slug de la URL (/portafolio/[categoria]) — separado de la key interna
+// para que la URL no quede en camelCase (realEstate -> "real-estate").
+export const categorySlugs: Record<PortfolioCategoryKey, string> = {
+  construccion: "construccion",
+  belleza: "belleza",
+  realEstate: "real-estate",
+  producto: "producto",
+};
+
+const slugToCategoryKey = Object.fromEntries(
+  Object.entries(categorySlugs).map(([key, slug]) => [slug, key])
+) as Record<string, PortfolioCategoryKey>;
+
+export function getCategoryKeyFromSlug(slug: string): PortfolioCategoryKey | undefined {
+  return slugToCategoryKey[slug];
+}
+
+export type PortfolioJob = {
+  id: string;
+  /** Foto "portada" del trabajo — horizontal. Se usa en el carrusel del hero. */
+  cover: string;
   photos?: string[];
+  youtubeIds?: string[];
 };
 
-export const portfolioMedia: Record<PortfolioCaseKey, PortfolioCaseMedia> = {
-  construccion: {
-    // Renovación de 4 baños en Rockville, MD — para CnC Home Improvement.
-    // El video es el testimonio del cliente; las fotos son el resultado
-    // final de cada baño.
-    youtubeIds: ["sSkk5C2vdL4"],
-    photos: [
-      "/portfolio/construccion/cover.jpg",
-      "/portfolio/construccion/photo-1.jpg",
-      "/portfolio/construccion/photo-2.jpg",
-      "/portfolio/construccion/photo-3.jpg",
-    ],
-  },
-  belleza: {},
-  realEstate: {},
-  producto: {},
+export type PortfolioCompany = {
+  id: string;
+  /** Nombre real de la empresa/cliente — no se traduce (nombre propio). */
+  name: string;
+  jobs: PortfolioJob[];
 };
+
+export const portfolioCatalog: Record<PortfolioCategoryKey, PortfolioCompany[]> = {
+  construccion: [
+    {
+      id: "cnc-home-improvement",
+      name: "CnC Home Improvement LLC",
+      jobs: [
+        {
+          id: "renovacion-4-banos-rockville",
+          cover:
+            "/portfolio/construccion/cnc-home-improvement/renovacion-4-banos-rockville/cover.jpg",
+          photos: [
+            "/portfolio/construccion/cnc-home-improvement/renovacion-4-banos-rockville/photo-1.jpg",
+            "/portfolio/construccion/cnc-home-improvement/renovacion-4-banos-rockville/photo-2.jpg",
+            "/portfolio/construccion/cnc-home-improvement/renovacion-4-banos-rockville/photo-3.jpg",
+          ],
+          youtubeIds: ["sSkk5C2vdL4"],
+        },
+      ],
+    },
+  ],
+  belleza: [],
+  realEstate: [],
+  producto: [],
+};
+
+export function getCompany(
+  categoryKey: PortfolioCategoryKey,
+  companyId: string
+): PortfolioCompany | undefined {
+  return portfolioCatalog[categoryKey]?.find((company) => company.id === companyId);
+}
+
+/** Todas las fotos "portada" de todos los trabajos — para el carrusel del hero. */
+export function getAllCovers(): string[] {
+  return Object.values(portfolioCatalog).flatMap((companies) =>
+    companies.flatMap((company) => company.jobs.map((job) => job.cover))
+  );
+}

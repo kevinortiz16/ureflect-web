@@ -169,30 +169,22 @@
     "headlineStart": "Projects that ",
     "headlineHighlight": "speak for themselves",
     "intro": "We document the progress, show the result, and turn that content into something you can use to win the next project.",
-    "mediaComingSoon": "Gallery coming soon",
-    "cases": {
+    "categories": {
       "construccion": {
-        "category": "Construction",
-        "client": "CnC Home Improvement LLC",
-        "description": "Job-site progress documentation and before/after transformation video for renovation projects across the DMV — from progress photography to a final video ready for social media and new-client proposals.",
-        "tags": "Photography · Video · Social Media",
-        "comingSoon": false
+        "label": "Construction",
+        "description": "Job-site progress documentation and before/after transformation video for renovation projects across the DMV."
       },
       "belleza": {
-        "category": "Beauty & Wellness",
-        "description": "We're about to start our first projects in this niche — barbershops and beauty studios across the DMV.",
-        "comingSoon": true
+        "label": "Beauty & Wellness",
+        "description": "Photography and video for barbershops and beauty studios across the DMV."
       },
       "realEstate": {
-        "category": "Real Estate",
-        "description": "We're about to start our first projects in this niche — photography and video for real estate listings.",
-        "comingSoon": true
+        "label": "Real Estate",
+        "description": "Photography and video for real estate listings."
       },
       "producto": {
-        "category": "Product Photography",
-        "description": "Product photography for clothing brands and businesses selling physical products: from studio catalog shots to on-location sessions with a model, ready for online stores and social media.",
-        "tags": "Product Photography · E-commerce · Social Media",
-        "comingSoon": false
+        "label": "Product Photography",
+        "description": "Product photography for clothing brands and businesses selling physical products."
       }
     },
     "cta": "Could your project be next?",
@@ -260,6 +252,27 @@
       "errorTitle": "Something went wrong",
       "errorBody": "We couldn't send your message. Try again or write to us on WhatsApp.",
       "requiredNote": "* Required fields"
+    }
+  },
+  "portfolioNav": {
+    "backToPortfolio": "← Back to portfolio",
+    "backToCategory": "← Back to {category}",
+    "companiesHeading": "Companies we've worked with",
+    "jobsHeading": "Completed work",
+    "jobCount": "{count, plural, one {# project} other {# projects}}",
+    "emptyCategory": "We don't have published projects in this category yet — check back soon!",
+    "watchVideo": "Watch video",
+    "companyCount": "{count, plural, one {# company} other {# companies}}",
+    "comingSoon": "Coming soon"
+  },
+  "portfolioJobs": {
+    "construccion": {
+      "cnc-home-improvement": {
+        "renovacion-4-banos-rockville": {
+          "title": "4-Bathroom Renovation — Rockville, MD",
+          "description": "Final-result photography for each bathroom and a client testimonial video."
+        }
+      }
     }
   }
 }
