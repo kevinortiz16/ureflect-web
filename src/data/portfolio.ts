@@ -57,7 +57,7 @@ export const portfolioCatalog: Record<PortfolioCategoryKey, PortfolioCompany[]> 
         {
           id: "renovacion-4-banos-rockville",
           cover:
-            "/portfolio/construccion/cnc-home-improvement/renovacion-4-banos-rockville/cover.jpg",
+            "/portfolio/construccion/cnc-home-improvement/kitchen-renovation-church-falls/cover.jpg",
           photos: [
             "/portfolio/construccion/cnc-home-improvement/renovacion-4-banos-rockville/photo-1.jpg",
             "/portfolio/construccion/cnc-home-improvement/renovacion-4-banos-rockville/photo-2.jpg",
@@ -100,6 +100,22 @@ export const portfolioCatalog: Record<PortfolioCategoryKey, PortfolioCompany[]> 
     },
   ],
   producto: [
+    {
+      id: "uare",
+      name: "UARE",
+      jobs: [
+        {
+          id: "sesion-producto-frutas-verduras",
+          cover: "/portfolio/producto/uare/sesion-producto-frutas-verduras/cover.jpg",
+          photos: [
+            "/portfolio/producto/uare/sesion-producto-frutas-verduras/photo-1.jpg",
+            "/portfolio/producto/uare/sesion-producto-frutas-verduras/photo-2.jpg",
+            "/portfolio/producto/uare/sesion-producto-frutas-verduras/photo-3.jpg",
+            "/portfolio/producto/uare/sesion-producto-frutas-verduras/photo-4.jpg",
+          ],
+        },
+      ],
+    },
     {
       id: "gavatt",
       name: "Gavatt",

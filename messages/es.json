@@ -280,6 +280,12 @@
       }
     },
     "producto": {
+      "uare": {
+        "sesion-producto-frutas-verduras": {
+          "title": "Sesión de fotografía de producto — UARE",
+          "description": "Fotografía de producto de frutas y verduras frescas para UARE."
+        }
+      },
       "fajate": {
         "sesion-producto-maryland": {
           "title": "Sesión de fotografía de producto — Fajate",
