@@ -1,7 +1,18 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import TeamPhoto from "@/components/sections/team-photo";
+import TeamPhotoGhost from "@/components/sections/team-photo-ghost";
 
 const stepKeys = ["contact", "visit", "delivery"] as const;
+
+// Fotos en public/team/ (ver el LEEME.md de esa carpeta) — no hace
+// falta que existan todavía: si falta un archivo, la tarjeta muestra
+// las iniciales de esa persona en su lugar.
+const teamMembers = [
+  { id: "kevin", image: "/team/kao.jpg", initials: "KO" },
+  { id: "catherine", image: "/team/catherine-aragon.jpg", initials: "CA" },
+  { id: "sebastian", image: "/team/sebastian-ortiz.jpg", initials: "SO" },
+] as const;
 
 export default async function NosotrosPage() {
   const t = await getTranslations("aboutPage");
@@ -39,6 +50,69 @@ export default async function NosotrosPage() {
             <p key={paragraph} className="text-sm leading-relaxed text-brand-black/80 sm:text-base">
               {paragraph}
             </p>
+          ))}
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <p className="text-xs font-semibold tracking-[0.2em] text-brand-blue-dark">
+          {t("team.eyebrow")}
+        </p>
+        <h2 className="mt-2 font-display text-2xl font-extrabold sm:text-3xl">
+          {t("team.heading")}
+        </h2>
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-brand-muted sm:text-base">
+          {t("team.intro")}
+        </p>
+
+        <div className="mt-10 grid gap-8 sm:grid-cols-3">
+          {teamMembers.map((member) => (
+            <div key={member.id} className="flex flex-col">
+              {/* Tarjeta que gira al pasar el cursor: de frente, la
+                  foto; al girar, una descripción breve sobre un
+                  fondo apenas más oscuro que el blanco de la página. */}
+              <div className="group [perspective:1200px]">
+                <div className="relative aspect-[4/5] w-full transition-transform duration-500 ease-out [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  <div className="absolute inset-0 [backface-visibility:hidden]">
+                    <TeamPhoto
+                      src={member.image}
+                      alt={t(`team.members.${member.id}.name`)}
+                      initials={member.initials}
+                    />
+                    {/* Difuminado blanco (arriba, donde va el
+                        rostro) a azul (abajo) sobre la foto,
+                        transparente y siempre visible, para darle a
+                        la foto real esa tonalidad de marca sin tapar
+                        la cara. */}
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/40 to-brand-blue/55"
+                    />
+                  </div>
+                  <div className="absolute inset-0 overflow-hidden rounded-2xl bg-brand-surface ring-1 ring-black/5 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    {/* Foto de fondo casi invisible, solo como
+                        textura — la descripción tiene que leerse
+                        bien por encima. */}
+                    <TeamPhotoGhost src={member.image} alt="" />
+                    <div className="relative flex h-full flex-col items-center justify-center p-6 text-center">
+                      <h4 className="font-display text-lg font-bold text-brand-blue">
+                        {t(`team.members.${member.id}.name`)}
+                      </h4>
+                      <p className="mt-3 text-sm leading-relaxed text-brand-black">
+                        {t(`team.members.${member.id}.bio`)}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 className="mt-5 font-display text-lg font-bold">
+                {t(`team.members.${member.id}.name`)}
+              </h3>
+              <p className="mt-1 text-sm font-semibold text-brand-blue-dark">
+                {t(`team.members.${member.id}.role`)}
+              </p>
+            </div>
           ))}
         </div>
       </section>

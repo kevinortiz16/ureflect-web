@@ -164,10 +164,32 @@
     "founderLabel": "Founder",
     "founderName": "Kevin Ortiz",
     "storyParagraphs": [
-      "Before founding Ureflect, I worked as a Jr. Project Manager at a remodeling company in the DMV — that's where I learned firsthand what matters to a contractor: that the work looks as good as it actually turned out, and that the content actually helps win the next client, not just look good on social media.",
-      "That experience, combined with a background in content development and technical support, is the foundation of Ureflect: understand the client's business first, then use photography, video, and technology — including AI — to show that work as professionally as possible.",
-      "Today we work with construction, remodeling, and other local service businesses across the DMV, with one standard: professional equipment, on-time delivery, and content you can actually use to sell."
+      "At Ureflect, we believe how a business presents itself to the world can matter just as much as the work it does. We're a content production and digital strategy studio based in the DC, Maryland and Virginia area, working with construction, remodeling, real estate and other local service businesses that want to look as professional as they really are.",
+      "We bring together photography, video, graphic design and web development with the latest tools — including AI — to turn a business's everyday work into content that actually sells: on social media, on their website, and in front of every potential client. Because today, image quality can be the difference between winning or losing the next opportunity.",
+      "Every project we deliver follows the same standard: professional gear, clear turnaround times, and results you can put to use right away. If your business doesn't yet look like the quality work it actually does, it's probably time to change that."
     ],
+    "team": {
+      "eyebrow": "TEAM",
+      "heading": "The team behind Ureflect",
+      "intro": "Ureflect is a content production and digital strategy studio based in the DC, Maryland and Virginia (DMV) area — we combine photography, video, graphic design and web development to help construction, real estate and other local service businesses look as professional as they really are.",
+      "members": {
+        "kevin": {
+          "name": "Kevin Ortiz",
+          "role": "Founder & Software Engineer",
+          "bio": "Convinced that no business should stay invisible online, he founded Ureflect to bring professional photography and technology together — because today, image quality can be the difference between winning or losing a client."
+        },
+        "catherine": {
+          "name": "Catherine Aragon",
+          "role": "CEO & Marketing",
+          "bio": "With more than 10 years of marketing experience and a sharp eye for social media, she makes sure the strategy behind every project connects with the right audience — and the right message."
+        },
+        "sebastian": {
+          "name": "Sebastian Ortiz",
+          "role": "Multimedia Engineer & Graphic Designer",
+          "bio": "Turns ideas into images: every line, stroke and color that comes out of his hands has a reason and a purpose, crafted so every client's brand looks exactly as it deserves."
+        }
+      }
+    },
     "equipmentHeading": "Equipment",
     "equipmentText": "Canon EOS RP camera with wide-aperture professional lenses (50mm f/1.8 and 24–105mm f/4L), iPhone 17 Pro with DJI Osmo Mobile 8 stabilization for smooth motion video, and Godox lighting — the same level of equipment used by content producers across the DMV.",
     "valuesHeading": "How we work",
