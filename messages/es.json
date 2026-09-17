@@ -67,7 +67,8 @@
     "social": "Redes Sociales",
     "web": "Sitios Web / Plataformas",
     "ai": "IA + Estrategia",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "comingSoon": "Próximamente"
   },
   "placeholder": {
     "comingSoon": "Estamos construyendo esta sección. Vuelve pronto.",
@@ -77,93 +78,59 @@
     "eyebrow": "SERVICIOS",
     "headlineStart": "Servicios pensados para negocios que ",
     "headlineHighlight": "quieren crecer, no solo publicar",
-    "intro": "Precios netos, sin sorpresas. Cada cotización final se ajusta al alcance específico de tu proyecto.",
-    "individualHeading": "Servicios individuales",
-    "individual": {
-      "brandSession": {
-        "title": "Sesión de fotografía de marca",
-        "description": "60–90 min · hasta 25 fotos editadas (equipo, oficina, retratos)",
-        "price": "$299"
+    "intro": "Contenido visual, sitios web, diseño y estrategia digital — organizado por lo que tu negocio necesita. Cada proyecto se cotiza según su alcance específico.",
+    "categoryLabel": "Categoría",
+    "nichoLabel": "Tipo de negocio",
+    "categories": {
+      "empresas": {
+        "label": "Empresas",
+        "description": "Fotografía, video y presencia digital adaptados al tipo de negocio que tienes — de constructoras a spas, de agentes inmobiliarios a marcas personales."
       },
-      "progressPhoto": {
-        "title": "Fotografía de progreso de obra",
-        "description": "Visita de 30–45 min · 15–20 fotos editadas",
-        "price": "$175"
+      "websites": {
+        "label": "Sitios Web",
+        "description": "Desde una página esencial hasta un desarrollo completamente a medida, construido con la misma tecnología profesional detrás de ureflect.net."
       },
-      "finalPhoto": {
-        "title": "Fotografía de resultado final",
-        "description": "90 min · proyecto terminado · hasta 30 fotos editadas",
-        "price": "$325"
+      "diseno": {
+        "label": "Diseño Gráfico",
+        "description": "Identidad de marca, animación 2D, animación 3D y motion graphics — para que tu marca se mueva, no solo se vea."
       },
-      "reel": {
-        "title": "Reel individual",
-        "description": "Guion + grabación + edición · formato vertical, hasta 45 seg",
-        "price": "$275"
-      },
-      "corporateVideo": {
-        "title": "Video horizontal corporativo",
-        "description": "Medio día · entrevista + b-roll · hasta 3 min editados",
-        "price": "$650"
-      },
-      "transformationVideo": {
-        "title": "Video de progreso y transformación de obra",
-        "description": "Hasta 2 visitas (inicio y resultado final) + edición narrativa con texto, música y logo · 1.5–3 min",
-        "price": "$850"
-      },
-      "website": {
-        "title": "Sitio web esencial",
-        "description": "5 páginas · responsive · formulario + WhatsApp Business",
-        "price": "$1,450"
-      },
-      "drone": {
-        "title": "Vuelo de dron (foto/video aéreo)",
-        "description": "Próximamente — en trámite la licencia Parte 107",
-        "price": "—"
+      "marketing": {
+        "label": "Marketing Digital, Asesorías y Colaboraciones",
+        "description": "Estrategia de contenido, producción UGC para marcas y presencia en la cuenta de viajes Kevin y Cathe Travel."
       }
     },
-    "plansHeading": "Planes mensuales",
-    "plansIntro": "Para negocios que quieren presencia constante durante el mes, no solo una entrega puntual. Los tres planes incluyen equipo profesional y edición completa; el nivel se ajusta al volumen de proyectos activos que tengas.",
-    "plans": {
-      "cimiento": {
-        "name": "Cimiento",
-        "price": "$650",
-        "period": "/mes",
-        "subtitle": "Para handymen y contratistas que están empezando a mostrar su trabajo.",
-        "features": [
-          "1 visita de progreso de obra al mes",
-          "3 reels editados",
-          "Acceso a fotos crudas seleccionadas"
-        ]
+    "nichos": {
+      "construccion": {
+        "label": "Construcción",
+        "description": "Constructoras y contratistas medianos del DMV que necesitan documentar cada proyecto, del progreso a la entrega final."
       },
-      "estructura": {
-        "name": "Estructura",
-        "price": "$1,200",
-        "period": "/mes",
-        "subtitle": "Para constructoras medianas con proyectos activos todo el mes.",
-        "features": [
-          "2 visitas de progreso de obra",
-          "1 fotografía de resultado final",
-          "5 reels editados",
-          "Google Business Profile (fotos + posts)"
-        ]
+      "realEstate": {
+        "label": "Real Estate",
+        "description": "Agentes y equipos inmobiliarios que necesitan fotos, video y presencia digital para vender listados más rápido."
       },
-      "acabado": {
-        "name": "Acabado",
-        "price": "$2,200",
-        "period": "/mes",
-        "subtitle": "Gestión casi completa de la presencia digital de tu empresa.",
-        "features": [
-          "4 visitas de progreso de obra",
-          "2 fotografías de resultado final",
-          "8 reels editados",
-          "2 videos horizontales al mes",
-          "Redes sociales + Google Business Profile + WhatsApp Business",
-          "Reporte mensual de resultados"
-        ]
+      "handyman": {
+        "label": "Handyman y Contratistas Pequeños",
+        "description": "Handyman y contratistas pequeños que necesitan mostrar cada trabajo terminado, rápido y sin complicaciones."
+      },
+      "barberias": {
+        "label": "Barberías",
+        "description": "Barberías que quieren que su contenido en redes se vea tan bien como el corte que entregan."
+      },
+      "estetica": {
+        "label": "Estética, Salud y Spa",
+        "description": "Spas y centros de estética que necesitan transmitir la misma calma de su espacio también en línea."
+      },
+      "marcaPersonal": {
+        "label": "Marca Personal",
+        "description": "Profesionales independientes que venden bajo su propio nombre y necesitan una imagen a la altura de su experiencia."
+      },
+      "corporativo": {
+        "label": "Contenido Corporativo General",
+        "description": "Empresas B2B del DMV que necesitan verse tan profesionales en línea como lo son en persona."
       }
     },
-    "ctaText": "¿No sabes cuál plan es para ti?",
-    "ctaButton": "Hablemos de tu proyecto"
+    "ctaText": "¿No estás seguro de qué necesitas exactamente?",
+    "ctaButton": "Contáctenos"
   },
   "portfolioPage": {
     "eyebrow": "NUESTRO TRABAJO",
@@ -305,6 +272,357 @@
           "title": "Fotografía de interiores — Arlington, VA",
           "description": "Fotografía de interiores de una vivienda residencial en Arlington, VA (cliente confidencial)."
         }
+      }
+    }
+  },
+  "servicesCatalog": {
+    "empresas": {
+      "construccion": {
+        "sesionMarca": {
+          "title": "Sesión de Fotografía de Marca",
+          "description": "Retratos de tu equipo, tu oficina y tu gente — la primera impresión que un cliente nuevo se forma de tu empresa antes de conocerte. En 60–90 minutos, sin interrumpir tu día.",
+          "price": "$299"
+        },
+        "progresoObra": {
+          "title": "Fotografía de Progreso de Obra",
+          "description": "Una visita corta al sitio y fotos que mantienen tranquilo a tu cliente mientras el proyecto avanza. La forma más simple de mostrar que las cosas avanzan.",
+          "price": "$175"
+        },
+        "resultadoFinal": {
+          "title": "Fotografía de Resultado Final",
+          "description": "El antes y el después es la prueba más contundente de tu trabajo. Fotografía profesional del proyecto terminado, lista para tu próxima propuesta.",
+          "price": "$325"
+        },
+        "reelIndividual": {
+          "title": "Reel Individual",
+          "description": "Guion, grabación y edición en formato vertical, listo para Instagram y TikTok. Ideal para mostrar un proyecto, un antes/después o a tu equipo en acción.",
+          "price": "$275"
+        },
+        "videoCorporativo": {
+          "title": "Video Horizontal Corporativo",
+          "description": "Entrevista y tomas del trabajo combinadas en un video que transmite seriedad y experiencia — la pieza que genera confianza antes de la primera reunión.",
+          "price": "$650"
+        },
+        "videoTransformacion": {
+          "title": "Video de Progreso y Transformación de Obra",
+          "description": "La historia completa de tu obra, del inicio al resultado final, narrada con texto, música y tu logo. El formato que mejor convierte en redes y presentaciones.",
+          "price": "$850"
+        }
+      },
+      "realEstate": {
+        "fotografiaPropiedad": {
+          "title": "Fotografía de Propiedad",
+          "description": "Un comprador decide en segundos si se detiene en tu listado. Fotografiamos interior y exterior con cámara full-frame para que cada espacio se vea amplio, luminoso y listo para vivir.",
+          "price": "Desde $199"
+        },
+        "videoTour": {
+          "title": "Video-Tour Narrado",
+          "description": "La mayoría de listados solo suben fotos. Un video-tour narrado pone tu propiedad un paso adelante, resaltando lo que las fotos no alcanzan a contar.",
+          "price": "Desde $299"
+        },
+        "reelVertical": {
+          "title": "Reel Vertical para Redes",
+          "description": "Contenido pensado para Instagram y TikTok, no reciclado de otro formato — para acompañar cada \"Just Listed\" o \"Just Sold\" y mantener tu presencia activa.",
+          "price": "Desde $199"
+        },
+        "fotografiaAgente": {
+          "title": "Fotografía de Agente / Marca Personal",
+          "description": "Headshot profesional y fotos en propiedad para que tu imagen se vea tan cuidada como el servicio que ofreces — lista para tu web, LinkedIn y tarjetas.",
+          "price": "Desde $249"
+        },
+        "listadoExpress": {
+          "title": "Listado Exprés (foto + video + entrega rápida)",
+          "description": "Fotografía y video-tour de la misma propiedad en una sola visita, con prioridad de agenda y entrega rápida — para no perder ni un día de exposición.",
+          "price": "Desde $449"
+        },
+        "googleBusinessRealEstate": {
+          "title": "Gestión de Google Business Profile",
+          "description": "Optimizamos tu perfil, publicamos contenido semanal y respondemos tus reseñas — para que aparezcas activo y confiable cada vez que alguien te busca en Google.",
+          "price": "Desde $149/mes"
+        }
+      },
+      "handyman": {
+        "antesDespues": {
+          "title": "Antes/Después Rápido",
+          "description": "Un trabajo bien hecho necesita una prueba, no un discurso. Entregamos el antes y el después de tu reparación en menos de 24 horas, listo para compartir.",
+          "price": "$85"
+        },
+        "trabajoTerminado": {
+          "title": "Fotos de Trabajo Terminado (mismo día)",
+          "description": "Llegamos al final de la obra y entregamos tus fotos ese mismo día — la ventana para mostrar un trabajo recién terminado es corta, y no la dejamos pasar.",
+          "price": "$175"
+        },
+        "reelReparacion": {
+          "title": "Reel Corto de Trabajo/Reparación",
+          "description": "Un video de 20 segundos mostrando una reparación real se queda en la mente del cliente potencial mucho más que una foto sola.",
+          "price": "$225"
+        },
+        "googleBusinessBasico": {
+          "title": "Gestión Básica de Google Business Profile",
+          "description": "La mayoría de tus clientes te buscan como \"reparaciones cerca de mí\". Ponemos tu perfil de Google a trabajar para que no pierdas esas llamadas.",
+          "price": "$199/mes"
+        },
+        "arranqueRedes": {
+          "title": "Paquete de Arranque de Redes Sociales",
+          "description": "Arrancamos tu perfil desde cero con contenido real de tu negocio — no plantillas genéricas — para que generes credibilidad desde el primer día.",
+          "price": "$275"
+        },
+        "fotosEquipo": {
+          "title": "Sesión de Fotos de Herramientas/Equipo",
+          "description": "Una imagen profesional de ti, tu camioneta y tus herramientas nivela el campo frente a negocios más grandes con mejores presupuestos de marketing.",
+          "price": "$199"
+        }
+      },
+      "barberias": {
+        "sesionMarcaBarberia": {
+          "title": "Sesión de Fotos de Marca",
+          "description": "Tu corte ya vende. Fotografiamos tu barbería completa — sillón, herramientas, ambiente y tu equipo en acción — para que el local se vea a la altura del trabajo.",
+          "price": "Desde $625"
+        },
+        "reelsTransformacion": {
+          "title": "Reels de Transformación",
+          "description": "El antes/después es el contenido que más convierte para una barbería. Capturamos varias transformaciones reales en una sola sesión, editadas y listas para publicar.",
+          "price": "Desde $450"
+        },
+        "comboFotosReels": {
+          "title": "Combo Fotos + Reels",
+          "description": "Una sola cita, un equipo completo de producción: sales con fotos del local y varios reels de transformación listos para las semanas siguientes.",
+          "price": "Desde $850"
+        },
+        "fotografiaProductoBarberia": {
+          "title": "Fotografía de Producto",
+          "description": "Pomadas, aceites y ceras fotografiados con fondo profesional — para que tu línea de productos se vea como una marca seria, no como una foto de celular.",
+          "price": "Desde $350"
+        },
+        "marcaBarbero": {
+          "title": "Marca Personal del Barbero",
+          "description": "Un barbero reconocible en redes atrae clientes que buscan específicamente a esa persona. Retrato profesional para tu bio, tu perfil de Google y cualquier nota de prensa.",
+          "price": "Desde $275"
+        },
+        "googleResenas": {
+          "title": "Google Business Profile + Reseñas",
+          "description": "La mayoría de clientes nuevos busca en Google antes de decidir a qué barbería ir. Optimizamos tu perfil y armamos una estrategia simple para generar reseñas nuevas.",
+          "price": "Desde $275"
+        }
+      },
+      "estetica": {
+        "fotografiaAmbiente": {
+          "title": "Fotografía de Ambiente e Instalaciones",
+          "description": "Tu spa se siente relajante en persona — hacemos que se vea igual en fotos. Recepción, salas de tratamiento y detalles, con luz cuidada y un ojo entrenado en espacios de bienestar.",
+          "price": "$1,050"
+        },
+        "fotografiaProductoEstetica": {
+          "title": "Fotografía de Producto (líneas de cuidado)",
+          "description": "Una línea de productos sin fotos profesionales es una fuente de ingresos que se queda sobre el mostrador. Fotografiamos tus productos listos para catálogo y redes.",
+          "price": "Desde $480"
+        },
+        "videoTratamiento": {
+          "title": "Video de Tratamiento con Consentimiento",
+          "description": "Mostrar cómo es realmente una visita a tu spa genera más confianza que cualquier descripción — siempre con consentimiento informado del cliente y sin prometer resultados.",
+          "price": "Desde $560"
+        },
+        "reelsBienestar": {
+          "title": "Reels de Bienestar y Ambiente",
+          "description": "Los reels que mejor funcionan para spas no muestran procedimientos: muestran una sensación — calma, cuidado, un momento para uno mismo.",
+          "price": "$690"
+        },
+        "testimonios": {
+          "title": "Testimonios en Video de Clientes",
+          "description": "Nada vende más un spa que un cliente real contando su experiencia. Testimonios en video con consentimiento informado, editados para redes y tu sitio web.",
+          "price": "Desde $600"
+        },
+        "googleBusinessEstetica": {
+          "title": "Gestión de Google Business Profile",
+          "description": "La mayoría de citas nuevas empiezan con una búsqueda en Google. Mantenemos tu perfil activo: fotos nuevas, publicaciones periódicas y respuesta a tus reseñas.",
+          "price": "Desde $199/mes"
+        }
+      },
+      "marcaPersonal": {
+        "sesionEsencial": {
+          "title": "Sesión Esencial de Marca Personal",
+          "description": "Tu primera impresión ya no puede depender de una selfie. Una hora de fotografía profesional para una imagen actual, seria y cercana a la vez.",
+          "price": "$450"
+        },
+        "sesionCompleta": {
+          "title": "Sesión Completa de Marca Personal",
+          "description": "Dos looks o locaciones distintas para tener variedad real de contenido — fotos para LinkedIn, tu web, tus propuestas y tus redes durante varios meses.",
+          "price": "$850"
+        },
+        "reelPresentacion": {
+          "title": "Reel de Presentación Personal",
+          "description": "Un video corto donde dices, con tu propia voz, quién eres, qué haces y a quién ayudas — el formato que hoy hace que alguien se detenga a mirar tu perfil.",
+          "price": "$550"
+        },
+        "paqueteLinkedin": {
+          "title": "Paquete de Contenido para LinkedIn",
+          "description": "Una sesión de fotos y varias piezas de contenido listas para publicar, para que estés visible en LinkedIn sin tener que producir nada tú mismo cada semana.",
+          "price": "Desde $1,100"
+        },
+        "bioProfesional": {
+          "title": "Bio Profesional Escrita",
+          "description": "La bio es lo primero que alguien lee después de ver tu foto. Redactamos tu bio corta y larga, con tu voz real — no un texto genérico de plantilla.",
+          "price": "$180"
+        },
+        "bannerRedes": {
+          "title": "Banner/Portada de Redes Personalizado",
+          "description": "La portada de tu LinkedIn o Facebook es uno de los espacios más desaprovechados de tu perfil. Diseñamos una portada que dice quién eres en tres segundos.",
+          "price": "$150"
+        },
+        "miniSitioPersonal": {
+          "title": "Mini Sitio Web de Portafolio Personal",
+          "description": "Un perfil de LinkedIn no reemplaza tener tu propio espacio en internet. Una página a medida con tu foto, tu bio, tus servicios y un llamado a la acción claro.",
+          "price": "Desde $950"
+        }
+      },
+      "corporativo": {
+        "fotografiaEquipo": {
+          "title": "Fotografía Corporativa de Equipo",
+          "description": "Tu equipo es la cara de tu empresa antes de que nadie entre por la puerta. Retratos individuales y foto grupal, listos para tu web, LinkedIn y firmas de correo.",
+          "price": "$850"
+        },
+        "fotografiaOficina": {
+          "title": "Fotografía de Oficina e Instalaciones",
+          "description": "Antes de contratar, tus clientes quieren saber con quién están tratando. Capturamos tus instalaciones para transmitir confianza desde el primer vistazo.",
+          "price": "$350"
+        },
+        "videoInstitucional": {
+          "title": "Video Institucional \"Quiénes Somos\"",
+          "description": "Un video corto y bien hecho responde en 60 segundos lo que a un texto le toma tres párrafos: quién eres, qué haces y por qué confiar en tu empresa.",
+          "price": "Desde $1,900"
+        },
+        "diaContenido": {
+          "title": "Día de Contenido para Redes Sociales",
+          "description": "En una sesión de medio día grabamos y editamos un paquete completo de fotos y reels, listos para programar durante varias semanas.",
+          "price": "Desde $600"
+        },
+        "googleBusinessCorporativo": {
+          "title": "Gestión de Google Business Profile",
+          "description": "Para muchos negocios B2B, Google Business Profile es el primer punto de contacto real con un cliente potencial. Mantenemos tu ficha activa y confiable.",
+          "price": "Desde $325/mes"
+        },
+        "sitioBasico": {
+          "title": "Sitio Web Corporativo Básico",
+          "description": "Una propuesta comercial pierde fuerza si al buscarte en Google no aparece nada. Una landing page profesional y a medida que respalda todo lo demás.",
+          "price": "Desde $950"
+        }
+      }
+    },
+    "websites": {
+      "esencial": {
+        "title": "Sitio Web Esencial",
+        "description": "Un sitio de pocas páginas, responsive, con formulario de contacto y WhatsApp Business integrado — la base digital que todo negocio necesita para dejar de depender solo de redes sociales.",
+        "price": "$1,450"
+      },
+      "corporativo": {
+        "title": "Sitio Web Corporativo",
+        "description": "Una landing profesional a medida, con las secciones clave de tu empresa: inicio, servicios, sobre nosotros y contacto — sin plantillas genéricas ni plugins innecesarios.",
+        "price": "Desde $950"
+      },
+      "portafolio": {
+        "title": "Mini Sitio de Portafolio",
+        "description": "Ideal para agentes inmobiliarios y marcas personales: una página propia donde reunir tu trabajo, tus propiedades o tus proyectos, sin depender solo de un perfil de redes.",
+        "price": "Desde $399"
+      },
+      "tiendaOnline": {
+        "title": "Tienda Online",
+        "description": "Tu propia tienda de e-commerce, con tu marca, catálogo de productos, y pagos y envíos configurados — lista para recibir pedidos reales desde el primer día.",
+        "price": "Desde $900"
+      },
+      "profesional": {
+        "title": "Sitio Web Profesional",
+        "description": "Más páginas, blog o gestor de contenido y formularios avanzados — para negocios que ya superaron lo esencial y necesitan un sitio que crezca con ellos.",
+        "price": "$2,800"
+      },
+      "aMedida": {
+        "title": "Sitio Web a Medida",
+        "description": "Funciones completamente a la medida — base de datos propia, contenido en varios idiomas, paneles internos — construido con la misma tecnología profesional detrás de ureflect.net.",
+        "price": "Desde $5,500"
+      }
+    },
+    "diseno": {
+      "identidad": {
+        "groupLabel": "Identidad de Marca",
+        "logoEsencial": {
+          "title": "Logo Esencial",
+          "description": "Un concepto inicial y rondas de ajustes hasta llegar al logo correcto — con archivos finales listos para usar en cualquier formato.",
+          "price": "$450"
+        },
+        "logoProfesional": {
+          "title": "Logo Profesional",
+          "description": "Varios conceptos distintos para elegir, más una mini guía de color y tipografía — para una identidad con más opciones y más criterio detrás.",
+          "price": "$750"
+        },
+        "identidadCompleta": {
+          "title": "Identidad de Marca Completa",
+          "description": "Logo, guía de marca completa y plantillas para redes sociales — todo lo que necesitas para que tu marca se vea igual de consistente en cualquier lugar.",
+          "price": "$1,200"
+        }
+      },
+      "animacion2d": {
+        "groupLabel": "Animación 2D",
+        "animacionLogo": {
+          "title": "Animación de Logo (Intro/Outro)",
+          "description": "Unos segundos de animación para abrir o cerrar tus videos con tu marca en movimiento — un detalle pequeño que se nota en cada entrega.",
+          "price": "$250"
+        },
+        "reelAnimado2d": {
+          "title": "Reel Animado 2D",
+          "description": "Un reel ilustrado, con texto animado y música — ideal cuando quieres destacar en redes con algo distinto a un video filmado.",
+          "price": "$450"
+        },
+        "paquetePostsAnimados": {
+          "title": "Paquete de Posts Animados",
+          "description": "Un set de piezas cortas animadas para redes sociales — contenido llamativo, listo para publicar, sin necesidad de una producción de video completa.",
+          "price": "$900"
+        }
+      },
+      "animacion3d": {
+        "groupLabel": "Animación 3D",
+        "render3d": {
+          "title": "Render 3D de Producto/Espacio",
+          "description": "Imágenes fotorrealistas de un producto o espacio, antes de que exista físicamente o sin tener que fotografiarlo todavía. Especialmente útil para constructoras y real estate.",
+          "price": "$600"
+        },
+        "recorrido3d": {
+          "title": "Recorrido 3D Corto (Walkthrough)",
+          "description": "Un video animado que recorre un espacio o proyecto — la forma más clara de mostrar un plano o una obra antes de que esté terminada.",
+          "price": "$1,200"
+        },
+        "animacion3dPersonalizada": {
+          "title": "Animación 3D Personalizada",
+          "description": "Un proyecto de animación 3D a la medida de tu producto, tu marca o tu arquitectura — se cotiza según el alcance de lo que necesitas mostrar.",
+          "price": "Desde $1,500"
+        }
+      },
+      "motion": {
+        "groupLabel": "Motion Graphics y Video Animado",
+        "videoExplicativo": {
+          "title": "Video Explicativo Animado",
+          "description": "Guion, animación y voz en off para explicar en menos de 90 segundos lo que tu producto o servicio hace — ideal para la página principal de tu sitio web.",
+          "price": "Desde $2,200"
+        },
+        "animacionPresentacion": {
+          "title": "Animación para Presentación Corporativa",
+          "description": "Gráficos animados para tus pitch decks o propuestas comerciales — para que tu siguiente presentación se vea tan seria como tu negocio.",
+          "price": "Desde $600"
+        }
+      }
+    },
+    "marketing": {
+      "asesoriaDigital": {
+        "title": "Asesoría de Marketing Digital",
+        "description": "Estrategia de redes sociales y buenas prácticas de contenido, de la mano de nuestra asesora de marketing digital — para que tu contenido no solo se vea bien, sino que esté pensado para convertir.",
+        "price": "Cotización personalizada"
+      },
+      "ugcMarcas": {
+        "title": "Contenido UGC para Marcas",
+        "description": "Grabamos y editamos contenido auténtico y natural con tu producto o servicio, listo para que tú lo publiques en tus propios canales y anuncios — sin que se vea a publicidad tradicional.",
+        "price": "$200 – $350"
+      },
+      "colaboracionesTravel": {
+        "title": "Colaboraciones con Kevin y Cathe Travel",
+        "description": "Si tu negocio es de turismo o hospitalidad, aparece frente a una audiencia real de viajeros en la cuenta Kevin y Cathe Travel — contenido auténtico, no un comercial tradicional.",
+        "price": "Desde $150"
       }
     }
   }
