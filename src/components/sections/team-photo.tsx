@@ -4,11 +4,17 @@ import { useState } from "react";
 import Image from "next/image";
 
 /**
- * Foto de un miembro del equipo — la cara "de frente" de la tarjeta
- * que gira en /nosotros (ver ese page.tsx: este componente vive
- * dentro de un contenedor con tamaño ya definido, así que llena todo
- * ese espacio con h-full/w-full en vez de fijar su propia relación
- * de aspecto).
+ * Foto de un miembro del equipo en /nosotros. El tamaño, la forma
+ * (círculo o rectángulo) y el fondo de respaldo los define quien usa
+ * este componente con su propio contenedor — aquí solo se llena ese
+ * espacio, para que el mismo componente sirva tanto para un avatar
+ * circular chico como para una foto grande rectangular.
+ *
+ * `fit="contain"` (por defecto) muestra la foto completa sin recortar
+ * cabeza/hombros — pensado para contenedores grandes. `fit="cover"`
+ * recorta para llenar el espacio por completo, mejor para avatares
+ * chicos (como en la lista del equipo) donde dejar espacio vacío
+ * alrededor de la cara se ve raro.
  *
  * Si la foto todavía no existe en public/team/ (o falla al cargar),
  * se muestra un respaldo con las iniciales sobre el degradado de
@@ -22,15 +28,17 @@ export default function TeamPhoto({
   src,
   alt,
   initials,
+  fit = "contain",
 }: {
   src: string;
   alt: string;
   initials: string;
+  fit?: "contain" | "cover";
 }) {
   const [failed, setFailed] = useState(false);
 
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-2xl bg-brand-ink ring-1 ring-black/5">
+    <div className="relative h-full w-full overflow-hidden">
       {!failed ? (
         <Image
           key={src}
@@ -38,12 +46,12 @@ export default function TeamPhoto({
           alt={alt}
           fill
           sizes="(min-width: 1024px) 33vw, 90vw"
-          className="object-cover"
+          className={fit === "cover" ? "object-cover" : "object-contain"}
           onError={() => setFailed(true)}
         />
       ) : (
         <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-brand-ink via-brand-blue-dark to-brand-blue">
-          <span className="font-display text-4xl font-extrabold text-white/90">{initials}</span>
+          <span className="font-display text-2xl font-extrabold text-white/90">{initials}</span>
         </div>
       )}
     </div>

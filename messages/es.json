@@ -81,6 +81,7 @@
     "intro": "Contenido visual, sitios web, diseño y estrategia digital — organizado por lo que tu negocio necesita. Cada proyecto se cotiza según su alcance específico.",
     "categoryLabel": "Categoría",
     "nichoLabel": "Tipo de negocio",
+    "selectorHelp": "Elige la categoría que mejor describe lo que necesitas y, si aplica, el tipo de negocio — así verás solo los servicios y precios que te corresponden.",
     "categories": {
       "empresas": {
         "label": "Empresas",
@@ -161,8 +162,8 @@
   "aboutPage": {
     "eyebrow": "NOSOTROS",
     "headline": "Contenido con el mismo nivel de exigencia con el que se construye",
-    "founderLabel": "Fundador",
-    "founderName": "Kevin Ortiz",
+    "storyEyebrow": "NUESTRA MISIÓN",
+    "storyHeading": "Que tu negocio se vea tan bien como trabaja",
     "storyParagraphs": [
       "En Ureflect creemos que la forma en que un negocio se presenta al mundo puede ser tan importante como el trabajo que hace. Somos una productora de contenido y estrategia digital con base en el área de DC, Maryland y Virginia, y trabajamos con negocios de construcción, remodelación, real estate y otros servicios locales que quieren verse tan profesionales como realmente son.",
       "Combinamos fotografía, video, diseño gráfico y desarrollo web con las herramientas más actuales — incluida inteligencia artificial — para convertir el trabajo diario de un negocio en contenido que realmente vende: en redes, en su sitio web y frente a cada cliente potencial. Porque hoy, la calidad de una imagen puede ser la diferencia entre ganar o perder la siguiente oportunidad.",

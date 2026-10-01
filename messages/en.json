@@ -81,6 +81,7 @@
     "intro": "Visual content, websites, design and digital strategy — organized by what your business actually needs. Every project is quoted to its specific scope.",
     "categoryLabel": "Category",
     "nichoLabel": "Business type",
+    "selectorHelp": "Pick the category that best fits what you need and, if it applies, your business type — you'll see only the services and prices that apply to you.",
     "categories": {
       "empresas": {
         "label": "Businesses",
@@ -161,8 +162,8 @@
   "aboutPage": {
     "eyebrow": "ABOUT",
     "headline": "Content held to the same standard as the work it documents",
-    "founderLabel": "Founder",
-    "founderName": "Kevin Ortiz",
+    "storyEyebrow": "OUR MISSION",
+    "storyHeading": "Make your business look as good as the work it does",
     "storyParagraphs": [
       "At Ureflect, we believe how a business presents itself to the world can matter just as much as the work it does. We're a content production and digital strategy studio based in the DC, Maryland and Virginia area, working with construction, remodeling, real estate and other local service businesses that want to look as professional as they really are.",
       "We bring together photography, video, graphic design and web development with the latest tools — including AI — to turn a business's everyday work into content that actually sells: on social media, on their website, and in front of every potential client. Because today, image quality can be the difference between winning or losing the next opportunity.",

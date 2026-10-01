@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { getCategoryCover } from "@/data/portfolio";
+import { categorySlugs, getCategoryCover } from "@/data/portfolio";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
@@ -52,7 +52,10 @@ export default function HeroSection() {
             no tienen material (por ejemplo Real Estate) muestran el
             degradado de respaldo. */}
         <div className="grid grid-cols-2 gap-4">
-          <div className="relative col-span-2 h-40 overflow-hidden rounded-2xl ring-1 ring-white/10 sm:h-48">
+          <Link
+            href={`/portafolio/${categorySlugs.construccion}`}
+            className="group relative col-span-2 h-40 overflow-hidden rounded-2xl ring-1 ring-white/10 transition-transform hover:scale-[1.015] sm:h-48"
+          >
             {construccionCover ? (
               <Image
                 src={construccionCover}
@@ -76,9 +79,12 @@ export default function HeroSection() {
                 {t("tagConstruccion")}
               </span>
             </div>
-          </div>
+          </Link>
 
-          <div className="relative h-32 overflow-hidden rounded-2xl ring-1 ring-white/10 sm:h-40">
+          <Link
+            href={`/portafolio/${categorySlugs.realEstate}`}
+            className="group relative h-32 overflow-hidden rounded-2xl ring-1 ring-white/10 transition-transform hover:scale-[1.015] sm:h-40"
+          >
             {realEstateCover ? (
               <Image
                 src={realEstateCover}
@@ -101,9 +107,12 @@ export default function HeroSection() {
                 {t("tagRealEstate")}
               </span>
             </div>
-          </div>
+          </Link>
 
-          <div className="relative h-32 overflow-hidden rounded-2xl ring-1 ring-white/10 sm:h-40">
+          <Link
+            href={`/portafolio/${categorySlugs.producto}`}
+            className="group relative h-32 overflow-hidden rounded-2xl ring-1 ring-white/10 transition-transform hover:scale-[1.015] sm:h-40"
+          >
             {productoCover ? (
               <Image
                 src={productoCover}
@@ -126,7 +135,7 @@ export default function HeroSection() {
                 {t("tagProducto")}
               </span>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

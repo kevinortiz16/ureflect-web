@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const serviceIcons: Record<string, string> = {
   content: "M4 7h3l2-2h6l2 2h3v12H4V7Z M12 10a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Z",
@@ -32,8 +33,9 @@ export default function ServicesSection() {
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {serviceKeys.map((key) => (
-            <div
+            <Link
               key={key}
+              href="/servicios"
               className="group rounded-2xl border border-black/5 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
             >
               <svg
@@ -57,7 +59,7 @@ export default function ServicesSection() {
               <span className="mt-4 inline-block text-brand-blue-dark opacity-0 transition-opacity group-hover:opacity-100">
                 →
               </span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

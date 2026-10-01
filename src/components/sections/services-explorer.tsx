@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import CategorySelect from "@/components/sections/category-select";
 import {
   serviceCategoryOrder,
   nichoOrder,
@@ -87,41 +88,47 @@ export default function ServicesExplorer() {
         />
 
         <div className="relative">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:gap-6">
-            <label className="flex-1">
-              <span className="block text-xs font-semibold uppercase tracking-wide text-brand-muted">
-                {t("categoryLabel")}
-              </span>
-              <select
-                value={category}
-                onChange={(e) => setCategory(e.target.value as ServiceCategoryKey)}
-                className="mt-2 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm font-semibold text-brand-black focus:border-brand-blue-dark focus:outline-none sm:max-w-sm"
-              >
-                {serviceCategoryOrder.map((key) => (
-                  <option key={key} value={key}>
-                    {t(`categories.${key}.label`)}
-                  </option>
-                ))}
-              </select>
-            </label>
+          {/* Texto guía: algunos visitantes no reconocen de entrada
+              que esto es un filtro — este renglón se lo explica antes
+              de que lleguen a los selectores. */}
+          <p className="flex max-w-xl items-start gap-2 text-sm text-brand-muted">
+            <svg
+              aria-hidden="true"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              className="mt-0.5 shrink-0 text-brand-blue"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 16v-4.5M12 8h.01" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            {t("selectorHelp")}
+          </p>
+
+          <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-end sm:gap-6">
+            <CategorySelect
+              label={t("categoryLabel")}
+              value={category}
+              onChange={setCategory}
+              options={serviceCategoryOrder.map((key) => ({
+                value: key,
+                label: t(`categories.${key}.label`),
+              }))}
+            />
 
             {category === "empresas" && (
-              <label className="flex-1">
-                <span className="block text-xs font-semibold uppercase tracking-wide text-brand-muted">
-                  {t("nichoLabel")}
-                </span>
-                <select
-                  value={nicho}
-                  onChange={(e) => setNicho(e.target.value as NichoKey)}
-                  className="mt-2 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm font-semibold text-brand-black focus:border-brand-blue-dark focus:outline-none sm:max-w-sm"
-                >
-                  {nichoOrder.map((key) => (
-                    <option key={key} value={key}>
-                      {t(`nichos.${key}.label`)}
-                    </option>
-                  ))}
-                </select>
-              </label>
+              <CategorySelect
+                label={t("nichoLabel")}
+                value={nicho}
+                onChange={setNicho}
+                options={nichoOrder.map((key) => ({
+                  value: key,
+                  label: t(`nichos.${key}.label`),
+                }))}
+              />
             )}
           </div>
 
@@ -233,26 +240,22 @@ function ServiceCard({
   price: string;
 }) {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/5 bg-gradient-to-br from-brand-black via-brand-ink to-brand-black p-5">
-      {/* brillo azul sutil en la esquina, puramente decorativo — el
-          mismo tratamiento oscuro que ya usan las tarjetas de
-          categoría en el inicio, para que el catálogo se sienta
-          consistente con el resto del sitio. */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-brand-blue/20 blur-2xl"
-      />
-      <h3 className="relative font-display text-base font-bold text-brand-blue">{title}</h3>
-      <p className="relative mt-2 flex-1 text-sm text-white/70">{description}</p>
-      {/* Precio: oculto por defecto, aparece al pasar el cursor, en
-          la esquina inferior derecha de la tarjeta, a 2x el tamaño
-          del párrafo (text-sm = 0.875rem → 1.75rem). */}
-      <span
-        aria-hidden="true"
-        className="relative mt-3 self-end text-[1.75rem] font-extrabold leading-none text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-      >
-        {price}
-      </span>
+    <div className="relative flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-white p-5 shadow-sm transition-shadow duration-300 hover:shadow-md">
+      {/* Franja superior de acento en azul de marca — el toque de
+          color vive ahí en vez de en toda la tarjeta, para que se
+          sienta profesional y no "luxury"/intimidante. */}
+      <span aria-hidden="true" className="absolute inset-x-0 top-0 h-1 bg-brand-blue" />
+      <h3 className="font-display text-base font-bold text-brand-black">{title}</h3>
+      <p className="mt-2 flex-1 text-sm text-brand-muted">{description}</p>
+      {/* Precio siempre visible (no depende de hover) — así
+          funciona igual en celular que en escritorio, y es
+          consistente con mostrar precios de forma transparente en
+          vez de "revelarlos" como si fuera un truco. */}
+      <div className="mt-4 border-t border-black/10 pt-3 text-right">
+        <span className="text-[1.75rem] font-extrabold leading-none text-brand-blue-dark">
+          {price}
+        </span>
+      </div>
     </div>
   );
 }

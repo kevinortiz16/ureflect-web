@@ -1,24 +1,39 @@
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { categorySlugs, getCategoryCover, type PortfolioCategoryKey } from "@/data/portfolio";
+import CategorySlider, { type CategorySlide } from "@/components/sections/category-slider";
+import {
+  categorySlugs,
+  getCategoryCover,
+  portfolioCatalog,
+  type PortfolioCategoryKey,
+} from "@/data/portfolio";
 
-// Belleza & Wellness va al final porque todavía no tiene trabajos
-// cargados; el resto va en el orden en el que sí hay material real.
-const portfolioKeys = ["construction", "realEstate", "product", "beauty"] as const;
-
-// El teaser del home usa sus propias keys en inglés (legado); el catálogo
-// real usa otras keys internas. Este mapa conecta cada tarjeta con la
-// categoría/slug de página correcta en /portafolio/[categoria].
-const teaserKeyToCategoryKey: Record<(typeof portfolioKeys)[number], PortfolioCategoryKey> = {
-  construction: "construccion",
-  beauty: "belleza",
-  realEstate: "realEstate",
-  product: "producto",
-};
+// Mismo orden que el grid "bento" de /portafolio: Construcción
+// primero (más peso estratégico y más portafolio real), Belleza al
+// final (todavía sin proyectos cargados).
+const categoryOrder: PortfolioCategoryKey[] = ["construccion", "producto", "realEstate", "belleza"];
 
 export default function PortfolioSection() {
   const t = useTranslations("portfolio");
+  const pages = useTranslations("portfolioPage");
+  const nav = useTranslations("portfolioNav");
+
+  const slides: CategorySlide[] = categoryOrder.map((key) => {
+    const companies = portfolioCatalog[key];
+    const jobCount = companies.reduce((total, company) => total + company.jobs.length, 0);
+    const isEmpty = companies.length === 0;
+
+    return {
+      key,
+      href: `/portafolio/${categorySlugs[key]}`,
+      label: pages(`categories.${key}.label`),
+      description: pages(`categories.${key}.description`),
+      meta: isEmpty
+        ? nav("comingSoon")
+        : `${nav("companyCount", { count: companies.length })} · ${nav("jobCount", { count: jobCount })}`,
+      cover: getCategoryCover(key),
+    };
+  });
 
   return (
     <section className="bg-brand-surface py-20 text-brand-black sm:py-24">
@@ -42,43 +57,12 @@ export default function PortfolioSection() {
           </Link>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {portfolioKeys.map((key) => {
-            const categoryKey = teaserKeyToCategoryKey[key];
-            const cover = getCategoryCover(categoryKey);
-
-            return (
-              <Link
-                key={key}
-                href={`/portafolio/${categorySlugs[categoryKey]}`}
-                className="group relative flex h-72 flex-col justify-end overflow-hidden rounded-2xl bg-brand-ink p-6 ring-1 ring-black/10 transition-transform hover:scale-[1.02]"
-              >
-                {cover ? (
-                  <Image
-                    src={cover}
-                    alt=""
-                    fill
-                    sizes="(min-width: 1024px) 25vw, 45vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                ) : null}
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-opacity group-hover:opacity-90"
-                />
-                <div
-                  aria-hidden="true"
-                  className="absolute -right-6 -top-6 h-32 w-32 rounded-full bg-brand-blue/20 blur-2xl"
-                />
-                <div className="relative">
-                  <h3 className="font-display text-lg font-bold text-white">
-                    {t(`items.${key}`)}
-                  </h3>
-                  <p className="mt-1 text-xs text-white/60">{t("servicesTag")}</p>
-                </div>
-              </Link>
-            );
-          })}
+        {/* Slider automático: pasa solo entre categorías cada pocos
+            segundos, pero se pausa si el usuario pasa el cursor o
+            toca la pantalla, y siempre se puede mover a mano con las
+            flechas o los puntos de abajo. */}
+        <div className="mt-12">
+          <CategorySlider slides={slides} />
         </div>
       </div>
     </section>

@@ -1,14 +1,26 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import PortfolioHeroCarousel from "@/components/portfolio-hero-carousel";
+import CategoryCover from "@/components/sections/category-cover";
 import {
   categorySlugs,
   getAllCovers,
+  getCategoryCover,
   portfolioCatalog,
   type PortfolioCategoryKey,
+  type PortfolioCompany,
 } from "@/data/portfolio";
 
-const categoryKeys: PortfolioCategoryKey[] = ["construccion", "belleza", "realEstate", "producto"];
+// Orden del grid "bento": Construcción primero porque es la
+// categoría con más peso estratégico (ver 03_Marketing/Estrategia
+// lanzamiento Raleigh) y se lleva la tarjeta grande; Belleza al
+// final porque todavía no tiene proyectos cargados y se lleva la
+// tarjeta chica. En celular se apilan en este mismo orden (ver
+// CategoryCard más abajo: el HTML ya sale en el orden correcto, así
+// que no hace falta reordenar nada con CSS para mobile).
+const bigCategoryKeys: PortfolioCategoryKey[] = ["construccion"];
+const mediumCategoryKeys: PortfolioCategoryKey[] = ["producto", "realEstate"];
+const smallCategoryKeys: PortfolioCategoryKey[] = ["belleza"];
 
 type CategoryCopy = { label: string; description: string };
 
@@ -41,39 +53,46 @@ export default async function PortafolioPage() {
         </div>
       </section>
 
-      {/* Categorías */}
+      {/* Categorías — grid "bento": una tarjeta grande (Construcción)
+          + dos medianas (Producto, Real Estate) + una chica y ancha
+          (Belleza, sin proyectos todavía). El tamaño de cada tarjeta
+          comunica cuánto portafolio real hay detrás, en vez de que
+          las 4 se vean igual de "llenas" aunque no lo estén. */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {categoryKeys.map((key) => {
-            const copy = categories[key];
-            const companies = portfolioCatalog[key];
-            const jobCount = companies.reduce((total, company) => total + company.jobs.length, 0);
-            const isEmpty = companies.length === 0;
-
-            return (
-              <Link
-                key={key}
-                href={`/portafolio/${categorySlugs[key]}`}
-                className="group relative flex min-h-[16rem] flex-col justify-between overflow-hidden rounded-2xl bg-brand-ink p-6 ring-1 ring-black/10 transition-transform hover:scale-[1.02]"
-              >
-                <div
-                  aria-hidden="true"
-                  className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-brand-blue/20 blur-2xl"
-                />
-
-                <div className="relative">
-                  <h2 className="font-display text-lg font-bold text-white">{copy.label}</h2>
-                  <p className="mt-2 text-sm text-white/70">{copy.description}</p>
-                </div>
-
-                <p className="relative mt-4 text-xs font-semibold tracking-wide text-brand-blue">
-                  {isEmpty
-                    ? `${nav("comingSoon")} →`
-                    : `${nav("companyCount", { count: companies.length })} · ${nav("jobCount", { count: jobCount })} →`}
-                </p>
-              </Link>
-            );
-          })}
+        <div className="grid gap-4 sm:grid-cols-[1.4fr_1fr] sm:grid-rows-2">
+          {bigCategoryKeys.map((key) => (
+            <CategoryCard
+              key={key}
+              categoryKey={key}
+              copy={categories[key]}
+              companies={portfolioCatalog[key]}
+              nav={nav}
+              size="big"
+              className="sm:row-span-2"
+            />
+          ))}
+          {mediumCategoryKeys.map((key) => (
+            <CategoryCard
+              key={key}
+              categoryKey={key}
+              copy={categories[key]}
+              companies={portfolioCatalog[key]}
+              nav={nav}
+              size="medium"
+            />
+          ))}
+        </div>
+        <div className="mt-4 grid gap-4">
+          {smallCategoryKeys.map((key) => (
+            <CategoryCard
+              key={key}
+              categoryKey={key}
+              copy={categories[key]}
+              companies={portfolioCatalog[key]}
+              nav={nav}
+              size="small"
+            />
+          ))}
         </div>
       </section>
 
@@ -90,5 +109,70 @@ export default async function PortafolioPage() {
         </div>
       </section>
     </div>
+  );
+}
+
+/**
+ * Una tarjeta del grid "bento" de categorías. `size` controla altura
+ * mínima y el tamaño del título/descripción — "big" y "medium"
+ * muestran descripción, "small" (Belleza, sin proyectos aún) se
+ * queda solo con el título y el estado, para que se sienta liviana
+ * en vez de forzar contenido que no existe todavía.
+ */
+function CategoryCard({
+  categoryKey,
+  copy,
+  companies,
+  nav,
+  size,
+  className = "",
+}: {
+  categoryKey: PortfolioCategoryKey;
+  copy: CategoryCopy;
+  companies: PortfolioCompany[];
+  nav: Awaited<ReturnType<typeof getTranslations>>;
+  size: "big" | "medium" | "small";
+  className?: string;
+}) {
+  const jobCount = companies.reduce((total, company) => total + company.jobs.length, 0);
+  const isEmpty = companies.length === 0;
+  const cover = getCategoryCover(categoryKey);
+
+  const minHeight =
+    size === "big"
+      ? "min-h-[20rem] sm:min-h-0"
+      : size === "medium"
+        ? "min-h-[11rem] sm:min-h-0"
+        : "min-h-[8rem]";
+
+  return (
+    <Link
+      href={`/portafolio/${categorySlugs[categoryKey]}`}
+      className={`group relative flex flex-col justify-end overflow-hidden rounded-2xl ring-1 ring-black/10 transition-transform duration-300 hover:scale-[1.015] ${minHeight} ${className}`}
+    >
+      <CategoryCover src={cover} />
+
+      <div className={`relative ${size === "big" ? "p-7" : size === "medium" ? "p-5" : "p-5"}`}>
+        <h2
+          className={`font-display font-bold text-white ${
+            size === "big" ? "text-2xl" : size === "medium" ? "text-lg" : "text-base"
+          }`}
+        >
+          {copy.label}
+        </h2>
+        {size !== "small" && (
+          <p
+            className={`mt-2 text-white/75 ${size === "big" ? "max-w-md text-sm sm:text-base" : "text-sm"}`}
+          >
+            {copy.description}
+          </p>
+        )}
+        <p className="relative mt-3 text-xs font-semibold tracking-wide text-brand-blue">
+          {isEmpty
+            ? `${nav("comingSoon")} →`
+            : `${nav("companyCount", { count: companies.length })} · ${nav("jobCount", { count: jobCount })} →`}
+        </p>
+      </div>
+    </Link>
   );
 }
