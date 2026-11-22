@@ -22,6 +22,14 @@
   --color-brand-surface: #f5f4f0; /* Blanco Marfil */
   --color-brand-muted: #6b7280;
 
+  /* Verde de WhatsApp (marca de terceros, no de Ureflect) — para el
+     botón "Escribir por WhatsApp". Es el verde que usa la propia app
+     de WhatsApp en botones/encabezados: con texto blanco da 4.89:1 y
+     pasa WCAG AA. El verde "clásico" #25D366 con texto blanco da solo
+     1.98:1, por eso no se usa aquí. */
+  --color-whatsapp: #008069;
+  --color-whatsapp-dark: #075e54; /* hover */
+
   /* Manrope = headings (close in spirit to Avenir Next: geometric,
      confident, great at large sizes). Inter = body copy (very high
      legibility at small sizes, pairs cleanly with Manrope, and is

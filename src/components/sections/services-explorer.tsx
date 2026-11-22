@@ -222,9 +222,11 @@ function HeroBackground({ src }: { src?: string }) {
             className="object-cover"
             onError={() => setFailed(true)}
           />
+          {/* Capa oscura sobre la foto: 30% menos opaca que antes
+              (90/70/100 → 63/49/70) para que la imagen se vea más. */}
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-b from-brand-ink/90 via-brand-ink/70 to-brand-ink"
+            className="absolute inset-0 bg-gradient-to-b from-brand-ink/63 via-brand-ink/49 to-brand-ink/70"
           />
         </>
       )}
