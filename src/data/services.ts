@@ -11,9 +11,9 @@
  * - "diseno": diseño gráfico, identidad de marca y animación.
  * - "marketing": asesoría de marketing digital, UGC y colaboraciones.
  *
- * No hay precios en ninguno de estos datos a propósito — la página de
- * servicios usa un solo llamado a la acción ("Contáctenos") en vez de
- * tarifas públicas.
+ * No hay precios en ninguno de estos datos ni en las traducciones a
+ * propósito — cada tarjeta de servicio muestra "Cotización
+ * personalizada" con un enlace a /contacto en vez de tarifas públicas.
  */
 
 export type ServiceCategoryKey = "empresas" | "websites" | "diseno" | "marketing";
@@ -43,6 +43,19 @@ export const nichoOrder: NichoKey[] = [
   "estetica",
   "marcaPersonal",
   "corporativo",
+];
+
+// Nichos que se MUESTRAN hoy en el selector "Tipo de negocio" de
+// /servicios, en este orden. Construcción y Real Estate van primero
+// porque son los segmentos principales. Los demás nichos de
+// `nichoOrder` (barberías, estética, corporativo) siguen definidos
+// aquí y en messages/*.json — solo están ocultos. Para reactivar uno,
+// basta con agregarlo a esta lista.
+export const nichosHabilitados: NichoKey[] = [
+  "construccion",
+  "realEstate",
+  "handyman",
+  "marcaPersonal",
 ];
 
 export const empresaServicios: Record<NichoKey, string[]> = {

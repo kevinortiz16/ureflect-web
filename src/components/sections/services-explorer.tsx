@@ -7,7 +7,7 @@ import { Link } from "@/i18n/navigation";
 import CategorySelect from "@/components/sections/category-select";
 import {
   serviceCategoryOrder,
-  nichoOrder,
+  nichosHabilitados,
   empresaServicios,
   websiteTypes,
   disenoGrupoOrder,
@@ -124,7 +124,7 @@ export default function ServicesExplorer() {
                 label={t("nichoLabel")}
                 value={nicho}
                 onChange={setNicho}
-                options={nichoOrder.map((key) => ({
+                options={nichosHabilitados.map((key) => ({
                   value: key,
                   label: t(`nichos.${key}.label`),
                 }))}
@@ -148,7 +148,8 @@ export default function ServicesExplorer() {
                         key={serviceId}
                         title={c(`diseno.${grupoKey}.${serviceId}.title`)}
                         description={c(`diseno.${grupoKey}.${serviceId}.description`)}
-                        price={c(`diseno.${grupoKey}.${serviceId}.price`)}
+                        quoteLabel={t("quoteLabel")}
+                        quoteCta={t("quoteCta")}
                       />
                     ))}
                   </div>
@@ -167,7 +168,8 @@ export default function ServicesExplorer() {
                     key={serviceId}
                     title={c(`${key}.title`)}
                     description={c(`${key}.description`)}
-                    price={c(`${key}.price`)}
+                    quoteLabel={t("quoteLabel")}
+                    quoteCta={t("quoteCta")}
                   />
                 );
               })}
@@ -233,11 +235,13 @@ function HeroBackground({ src }: { src?: string }) {
 function ServiceCard({
   title,
   description,
-  price,
+  quoteLabel,
+  quoteCta,
 }: {
   title: string;
   description: string;
-  price: string;
+  quoteLabel: string;
+  quoteCta: string;
 }) {
   return (
     <div className="relative flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-white p-5 shadow-sm transition-shadow duration-300 hover:shadow-md">
@@ -247,14 +251,20 @@ function ServiceCard({
       <span aria-hidden="true" className="absolute inset-x-0 top-0 h-1 bg-brand-blue" />
       <h3 className="font-display text-base font-bold text-brand-black">{title}</h3>
       <p className="mt-2 flex-1 text-sm text-brand-muted">{description}</p>
-      {/* Precio siempre visible (no depende de hover) — así
-          funciona igual en celular que en escritorio, y es
-          consistente con mostrar precios de forma transparente en
-          vez de "revelarlos" como si fuera un truco. */}
-      <div className="mt-4 border-t border-black/10 pt-3 text-right">
-        <span className="text-[1.75rem] font-extrabold leading-none text-brand-blue-dark">
-          {price}
+      {/* Sin precios públicos: cada servicio se cotiza según su
+          alcance. El pie de la tarjeta lleva siempre el mismo llamado
+          a cotización con enlace a /contacto, siempre visible (no
+          depende de hover) para que funcione igual en celular. */}
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-2 border-t border-black/10 pt-3">
+        <span className="text-xs font-semibold uppercase tracking-wide text-brand-muted">
+          {quoteLabel}
         </span>
+        <Link
+          href="/contacto"
+          className="text-sm font-semibold text-brand-blue-dark underline-offset-4 hover:underline"
+        >
+          {quoteCta} →
+        </Link>
       </div>
     </div>
   );

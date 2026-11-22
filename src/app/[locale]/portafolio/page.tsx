@@ -13,14 +13,17 @@ import {
 
 // Orden del grid "bento": Construcción primero porque es la
 // categoría con más peso estratégico (ver 03_Marketing/Estrategia
-// lanzamiento Raleigh) y se lleva la tarjeta grande; Belleza al
-// final porque todavía no tiene proyectos cargados y se lleva la
-// tarjeta chica. En celular se apilan en este mismo orden (ver
+// lanzamiento Raleigh) y se lleva la tarjeta grande. En celular se
+// apilan en este mismo orden (ver
 // CategoryCard más abajo: el HTML ya sale en el orden correcto, así
 // que no hace falta reordenar nada con CSS para mobile).
 const bigCategoryKeys: PortfolioCategoryKey[] = ["construccion"];
-const mediumCategoryKeys: PortfolioCategoryKey[] = ["producto", "realEstate"];
-const smallCategoryKeys: PortfolioCategoryKey[] = ["belleza"];
+// Real Estate antes que Producto: es el segundo segmento principal.
+const mediumCategoryKeys: PortfolioCategoryKey[] = ["realEstate", "producto"];
+// Belleza está retirada de la lista visible (sin proyectos y fuera del
+// enfoque actual). Su categoría y textos siguen existiendo; para
+// reactivarla como tarjeta chica, basta con volver a poner "belleza" aquí.
+const smallCategoryKeys: PortfolioCategoryKey[] = [];
 
 type CategoryCopy = { label: string; description: string };
 
@@ -54,8 +57,9 @@ export default async function PortafolioPage() {
       </section>
 
       {/* Categorías — grid "bento": una tarjeta grande (Construcción)
-          + dos medianas (Producto, Real Estate) + una chica y ancha
-          (Belleza, sin proyectos todavía). El tamaño de cada tarjeta
+          + dos medianas (Real Estate, Producto); la fila de tarjetas
+          chicas solo aparece si smallCategoryKeys tiene alguna
+          categoría (hoy está vacía). El tamaño de cada tarjeta
           comunica cuánto portafolio real hay detrás, en vez de que
           las 4 se vean igual de "llenas" aunque no lo estén. */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -82,18 +86,20 @@ export default async function PortafolioPage() {
             />
           ))}
         </div>
-        <div className="mt-4 grid gap-4">
-          {smallCategoryKeys.map((key) => (
-            <CategoryCard
-              key={key}
-              categoryKey={key}
-              copy={categories[key]}
-              companies={portfolioCatalog[key]}
-              nav={nav}
-              size="small"
-            />
-          ))}
-        </div>
+        {smallCategoryKeys.length > 0 && (
+          <div className="mt-4 grid gap-4">
+            {smallCategoryKeys.map((key) => (
+              <CategoryCard
+                key={key}
+                categoryKey={key}
+                copy={categories[key]}
+                companies={portfolioCatalog[key]}
+                nav={nav}
+                size="small"
+              />
+            ))}
+          </div>
+        )}
       </section>
 
       {/* CTA */}

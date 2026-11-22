@@ -8,10 +8,12 @@ import {
   type PortfolioCategoryKey,
 } from "@/data/portfolio";
 
-// Mismo orden que el grid "bento" de /portafolio: Construcción
-// primero (más peso estratégico y más portafolio real), Belleza al
-// final (todavía sin proyectos cargados).
-const categoryOrder: PortfolioCategoryKey[] = ["construccion", "producto", "realEstate", "belleza"];
+// Mismo orden que el grid "bento" de /portafolio: Construcción y Real
+// Estate primero (los dos segmentos principales del negocio). Belleza
+// está retirada de la lista visible (sin proyectos y fuera del enfoque
+// actual) — su categoría y textos siguen existiendo; para reactivarla,
+// basta con agregar "belleza" de nuevo al final de este array.
+const categoryOrder: PortfolioCategoryKey[] = ["construccion", "realEstate", "producto"];
 
 export default function PortfolioSection() {
   const t = useTranslations("portfolio");

@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Ureflect | Content · Digital · Growth",
+    "description": "Visual content, digital presence, and strategy for businesses that want to grow in Raleigh-Durham and the Research Triangle (RTP), North Carolina."
+  },
   "nav": {
     "home": "Home",
     "services": "Services",
@@ -11,7 +15,7 @@
     "eyebrow": "CONTENT · DIGITAL · GROWTH",
     "headlineStart": "We make your business look as professional as ",
     "headlineHighlight": "it really is.",
-    "subcopy": "Visual content, digital presence, and strategy for businesses that want to grow.",
+    "subcopy": "Visual content, digital presence, and strategy for businesses that want to grow in Raleigh-Durham and the Research Triangle (RTP), North Carolina. We also serve Charlotte, Greensboro, and Winston-Salem.",
     "primaryCta": "Let's talk about your project",
     "secondaryCta": "See our work",
     "tagConstruccion": "CONSTRUCTION & REMODELING",
@@ -81,11 +85,11 @@
     "intro": "Visual content, websites, design and digital strategy — organized by what your business actually needs. Every project is quoted to its specific scope.",
     "categoryLabel": "Category",
     "nichoLabel": "Business type",
-    "selectorHelp": "Pick the category that best fits what you need and, if it applies, your business type — you'll see only the services and prices that apply to you.",
+    "selectorHelp": "Pick the category that best fits what you need and, if it applies, your business type — you'll see only the services that apply to you.",
     "categories": {
       "empresas": {
         "label": "Businesses",
-        "description": "Photography, video and digital presence tailored to your type of business — from construction companies to spas, from real estate agents to personal brands."
+        "description": "Photography, video and digital presence tailored to your type of business — from construction companies and real estate agents to handymen and personal brands."
       },
       "websites": {
         "label": "Websites",
@@ -103,7 +107,7 @@
     "nichos": {
       "construccion": {
         "label": "Construction",
-        "description": "Mid-size construction companies and contractors in the DMV who need every project documented, from progress to final delivery."
+        "description": "Mid-size construction companies and contractors in Raleigh-Durham and the Triangle who need every project documented, from progress to final delivery."
       },
       "realEstate": {
         "label": "Real Estate",
@@ -127,11 +131,13 @@
       },
       "corporativo": {
         "label": "General Corporate Content",
-        "description": "B2B businesses in the DMV that need to look as professional online as they are in person."
+        "description": "B2B businesses that need to look as professional online as they are in person."
       }
     },
     "ctaText": "Not sure exactly what you need?",
-    "ctaButton": "Contact Us"
+    "ctaButton": "Contact Us",
+    "quoteLabel": "Custom quote",
+    "quoteCta": "Request a quote"
   },
   "portfolioPage": {
     "eyebrow": "OUR WORK",
@@ -141,11 +147,11 @@
     "categories": {
       "construccion": {
         "label": "Construction",
-        "description": "Job-site progress documentation and before/after transformation video for renovation projects across the DMV."
+        "description": "Job-site progress documentation and before/after transformation video for renovation projects."
       },
       "belleza": {
         "label": "Beauty & Wellness",
-        "description": "Photography and video for barbershops and beauty studios across the DMV."
+        "description": "Photography and video for barbershops and beauty studios."
       },
       "realEstate": {
         "label": "Real Estate",
@@ -165,14 +171,14 @@
     "storyEyebrow": "OUR MISSION",
     "storyHeading": "Make your business look as good as the work it does",
     "storyParagraphs": [
-      "At Ureflect, we believe how a business presents itself to the world can matter just as much as the work it does. We're a content production and digital strategy studio based in the DC, Maryland and Virginia area, working with construction, remodeling, real estate and other local service businesses that want to look as professional as they really are.",
+      "At Ureflect, we believe how a business presents itself to the world can matter just as much as the work it does. We're a content production and digital strategy studio based in Raleigh-Durham and the Research Triangle (RTP), North Carolina, also covering Charlotte, Greensboro and Winston-Salem, and we continue to serve our clients in the DC, Maryland and Virginia area. We work with construction, remodeling, real estate and other local service businesses that want to look as professional as they really are.",
       "We bring together photography, video, graphic design and web development with the latest tools — including AI — to turn a business's everyday work into content that actually sells: on social media, on their website, and in front of every potential client. Because today, image quality can be the difference between winning or losing the next opportunity.",
       "Every project we deliver follows the same standard: professional gear, clear turnaround times, and results you can put to use right away. If your business doesn't yet look like the quality work it actually does, it's probably time to change that."
     ],
     "team": {
       "eyebrow": "TEAM",
       "heading": "The team behind Ureflect",
-      "intro": "Ureflect is a content production and digital strategy studio based in the DC, Maryland and Virginia (DMV) area — we combine photography, video, graphic design and web development to help construction, real estate and other local service businesses look as professional as they really are.",
+      "intro": "Ureflect is a content production and digital strategy studio based in Raleigh-Durham and the Research Triangle (RTP), North Carolina — we combine photography, video, graphic design and web development to help construction, real estate and other local service businesses look as professional as they really are.",
       "members": {
         "kevin": {
           "name": "Kevin Ortiz",
@@ -192,7 +198,7 @@
       }
     },
     "equipmentHeading": "Equipment",
-    "equipmentText": "Canon EOS RP camera with wide-aperture professional lenses (50mm f/1.8 and 24–105mm f/4L), iPhone 17 Pro with DJI Osmo Mobile 8 stabilization for smooth motion video, and Godox lighting — the same level of equipment used by content producers across the DMV.",
+    "equipmentText": "Canon EOS RP camera with wide-aperture professional lenses (50mm f/1.8 and 24–105mm f/4L), iPhone 17 Pro with DJI Osmo Mobile 8 stabilization for smooth motion video, and Godox lighting — the same level of equipment used by professional content producers.",
     "valuesHeading": "How we work",
     "steps": {
       "contact": {
@@ -222,7 +228,7 @@
     "whatsappCta": "Message on WhatsApp",
     "emailCta": "Send an email",
     "areaLabel": "Service area",
-    "areaValue": "DMV — Washington D.C., Maryland & Virginia",
+    "areaValue": "Raleigh-Durham & RTP, North Carolina · Also Charlotte, Greensboro & Winston-Salem · Active clients in DC, MD & VA",
     "formNote": "Prefer WhatsApp or email? You'll find direct links above.",
     "form": {
       "formHeading": "Or write to us directly from here",
@@ -303,263 +309,214 @@
       "construccion": {
         "sesionMarca": {
           "title": "Brand Photography Session",
-          "description": "Portraits of your team, your office and your people — the first impression a new client forms of your company before meeting you. In 60–90 minutes, without interrupting your day.",
-          "price": "$299"
+          "description": "Portraits of your team, your office and your people — the first impression a new client forms of your company before meeting you. In 60–90 minutes, without interrupting your day."
         },
         "progresoObra": {
           "title": "Construction Progress Photography",
-          "description": "A short site visit and photos that keep your client at ease while the project moves forward. The simplest way to show real progress.",
-          "price": "$175"
+          "description": "A short site visit and photos that keep your client at ease while the project moves forward. The simplest way to show real progress."
         },
         "resultadoFinal": {
           "title": "Final Result Photography",
-          "description": "Before and after is the most convincing proof of your work. Professional photography of the finished project, ready for your next proposal.",
-          "price": "$325"
+          "description": "Before and after is the most convincing proof of your work. Professional photography of the finished project, ready for your next proposal."
         },
         "reelIndividual": {
           "title": "Individual Reel",
-          "description": "Script, filming and editing in vertical format, ready for Instagram and TikTok. Perfect for showing a project, a before/after, or your team in action.",
-          "price": "$275"
+          "description": "Script, filming and editing in vertical format, ready for Instagram and TikTok. Perfect for showing a project, a before/after, or your team in action."
         },
         "videoCorporativo": {
           "title": "Corporate Horizontal Video",
-          "description": "Interview and work footage combined into a video that conveys seriousness and experience — the piece that builds trust before the first meeting.",
-          "price": "$650"
+          "description": "Interview and work footage combined into a video that conveys seriousness and experience — the piece that builds trust before the first meeting."
         },
         "videoTransformacion": {
           "title": "Construction Progress & Transformation Video",
-          "description": "The complete story of your project, from start to finished result, narrated with text, music and your logo. The format that converts best on social media and in presentations.",
-          "price": "$850"
+          "description": "The complete story of your project, from start to finished result, narrated with text, music and your logo. The format that converts best on social media and in presentations."
         }
       },
       "realEstate": {
         "fotografiaPropiedad": {
           "title": "Property Photography",
-          "description": "A buyer decides in seconds whether to stop on your listing. We shoot interior and exterior with full-frame cameras so every space looks bright, spacious and move-in ready.",
-          "price": "From $199"
+          "description": "A buyer decides in seconds whether to stop on your listing. We shoot interior and exterior with full-frame cameras so every space looks bright, spacious and move-in ready."
         },
         "videoTour": {
           "title": "Narrated Video Tour",
-          "description": "Most listings only post photos. A narrated video tour puts your property a step ahead, highlighting what photos alone can't capture.",
-          "price": "From $299"
+          "description": "Most listings only post photos. A narrated video tour puts your property a step ahead, highlighting what photos alone can't capture."
         },
         "reelVertical": {
           "title": "Vertical Social Reel",
-          "description": "Content built for Instagram and TikTok, not recycled from another format — perfect for every \"Just Listed\" or \"Just Sold\" to keep your presence active.",
-          "price": "From $199"
+          "description": "Content built for Instagram and TikTok, not recycled from another format — perfect for every \"Just Listed\" or \"Just Sold\" to keep your presence active."
         },
         "fotografiaAgente": {
           "title": "Agent / Personal Brand Photography",
-          "description": "A professional headshot plus on-property photos so your image looks as polished as the service you offer — ready for your website, LinkedIn and cards.",
-          "price": "From $249"
+          "description": "A professional headshot plus on-property photos so your image looks as polished as the service you offer — ready for your website, LinkedIn and cards."
         },
         "listadoExpress": {
           "title": "Express Listing (photo + video + fast delivery)",
-          "description": "Photography and a video tour of the same property in a single visit, with priority scheduling and fast delivery — so you don't lose a single day of exposure.",
-          "price": "From $449"
+          "description": "Photography and a video tour of the same property in a single visit, with priority scheduling and fast delivery — so you don't lose a single day of exposure."
         },
         "googleBusinessRealEstate": {
           "title": "Google Business Profile Management",
-          "description": "We optimize your profile, publish weekly content and respond to your reviews — so you show up active and trustworthy every time someone searches for you on Google.",
-          "price": "From $149/mo"
+          "description": "We optimize your profile, publish weekly content and respond to your reviews — so you show up active and trustworthy every time someone searches for you on Google."
         }
       },
       "handyman": {
         "antesDespues": {
           "title": "Quick Before/After",
-          "description": "A job well done needs proof, not a pitch. We deliver your before-and-after in under 24 hours, ready to share.",
-          "price": "$85"
+          "description": "A job well done needs proof, not a pitch. We deliver your before-and-after in under 24 hours, ready to share."
         },
         "trabajoTerminado": {
           "title": "Finished Work Photos (same day)",
-          "description": "We show up right when the job wraps up and deliver your photos that same day — the window to showcase finished work is short, and we don't let it pass.",
-          "price": "$175"
+          "description": "We show up right when the job wraps up and deliver your photos that same day — the window to showcase finished work is short, and we don't let it pass."
         },
         "reelReparacion": {
           "title": "Short Job/Repair Reel",
-          "description": "A 20-second video showing a real repair sticks in a potential client's mind far more than a single photo.",
-          "price": "$225"
+          "description": "A 20-second video showing a real repair sticks in a potential client's mind far more than a single photo."
         },
         "googleBusinessBasico": {
           "title": "Basic Google Business Profile Management",
-          "description": "Most of your clients search for you as \"repairs near me\". We put your Google profile to work so you don't miss those calls.",
-          "price": "$199/mo"
+          "description": "Most of your clients search for you as \"repairs near me\". We put your Google profile to work so you don't miss those calls."
         },
         "arranqueRedes": {
           "title": "Social Media Starter Package",
-          "description": "We launch your social profile from scratch with real content from your business — no generic templates — so you build credibility from day one.",
-          "price": "$275"
+          "description": "We launch your social profile from scratch with real content from your business — no generic templates — so you build credibility from day one."
         },
         "fotosEquipo": {
           "title": "Tools/Equipment Photo Session",
-          "description": "A professional image of you, your truck and your tools levels the playing field against bigger businesses with bigger marketing budgets.",
-          "price": "$199"
+          "description": "A professional image of you, your truck and your tools levels the playing field against bigger businesses with bigger marketing budgets."
         }
       },
       "barberias": {
         "sesionMarcaBarberia": {
           "title": "Brand Photo Session",
-          "description": "Your cut already sells. We photograph your entire barbershop — chair, tools, atmosphere and your team in action — so the space matches the quality of the work.",
-          "price": "From $625"
+          "description": "Your cut already sells. We photograph your entire barbershop — chair, tools, atmosphere and your team in action — so the space matches the quality of the work."
         },
         "reelsTransformacion": {
           "title": "Transformation Reels",
-          "description": "Before-and-afters are the content that converts best for a barbershop. We capture several real transformations in one session, edited and ready to publish.",
-          "price": "From $450"
+          "description": "Before-and-afters are the content that converts best for a barbershop. We capture several real transformations in one session, edited and ready to publish."
         },
         "comboFotosReels": {
           "title": "Photo + Reels Combo",
-          "description": "One appointment, a full production team: you walk away with shop photos and several transformation reels ready for the weeks ahead.",
-          "price": "From $850"
+          "description": "One appointment, a full production team: you walk away with shop photos and several transformation reels ready for the weeks ahead."
         },
         "fotografiaProductoBarberia": {
           "title": "Product Photography",
-          "description": "Pomades, oils and waxes shot with a professional background — so your product line looks like a real brand, not a phone photo on the counter.",
-          "price": "From $350"
+          "description": "Pomades, oils and waxes shot with a professional background — so your product line looks like a real brand, not a phone photo on the counter."
         },
         "marcaBarbero": {
           "title": "Barber Personal Brand",
-          "description": "A recognizable barber on social media attracts clients looking specifically for that person. A professional portrait for your bio, your Google profile and any press mention.",
-          "price": "From $275"
+          "description": "A recognizable barber on social media attracts clients looking specifically for that person. A professional portrait for your bio, your Google profile and any press mention."
         },
         "googleResenas": {
           "title": "Google Business Profile + Reviews",
-          "description": "Most new clients check Google before deciding which barbershop to visit. We optimize your profile and build a simple strategy to generate new reviews.",
-          "price": "From $275"
+          "description": "Most new clients check Google before deciding which barbershop to visit. We optimize your profile and build a simple strategy to generate new reviews."
         }
       },
       "estetica": {
         "fotografiaAmbiente": {
           "title": "Ambiance & Facility Photography",
-          "description": "Your spa feels relaxing in person — we make it look that way in photos too. Reception, treatment rooms and details, shot with careful light and an eye trained in wellness spaces.",
-          "price": "$1,050"
+          "description": "Your spa feels relaxing in person — we make it look that way in photos too. Reception, treatment rooms and details, shot with careful light and an eye trained in wellness spaces."
         },
         "fotografiaProductoEstetica": {
           "title": "Product Photography (care lines)",
-          "description": "A product line without professional photos is revenue left sitting on the counter. We photograph your products ready for catalog and social media.",
-          "price": "From $480"
+          "description": "A product line without professional photos is revenue left sitting on the counter. We photograph your products ready for catalog and social media."
         },
         "videoTratamiento": {
           "title": "Treatment Video with Consent",
-          "description": "Showing what a visit to your spa is really like builds more trust than any description — always with the client's informed consent and no promised results.",
-          "price": "From $560"
+          "description": "Showing what a visit to your spa is really like builds more trust than any description — always with the client's informed consent and no promised results."
         },
         "reelsBienestar": {
           "title": "Wellness & Ambiance Reels",
-          "description": "The reels that work best for spas don't show procedures — they show a feeling: calm, care, a moment just for you.",
-          "price": "$690"
+          "description": "The reels that work best for spas don't show procedures — they show a feeling: calm, care, a moment just for you."
         },
         "testimonios": {
           "title": "Client Video Testimonials",
-          "description": "Nothing sells a spa better than a real client sharing their experience. Video testimonials with informed consent, edited for social media and your website.",
-          "price": "From $600"
+          "description": "Nothing sells a spa better than a real client sharing their experience. Video testimonials with informed consent, edited for social media and your website."
         },
         "googleBusinessEstetica": {
           "title": "Google Business Profile Management",
-          "description": "Most new appointments start with a Google search. We keep your profile active: fresh photos, regular posts and responses to your reviews.",
-          "price": "From $199/mo"
+          "description": "Most new appointments start with a Google search. We keep your profile active: fresh photos, regular posts and responses to your reviews."
         }
       },
       "marcaPersonal": {
         "sesionEsencial": {
           "title": "Essential Personal Brand Session",
-          "description": "Your first impression can't depend on a selfie anymore. One hour of professional photography for an image that's current, credible and approachable.",
-          "price": "$450"
+          "description": "Your first impression can't depend on a selfie anymore. One hour of professional photography for an image that's current, credible and approachable."
         },
         "sesionCompleta": {
           "title": "Complete Personal Brand Session",
-          "description": "Two different looks or locations for real content variety — photos for LinkedIn, your website, your proposals and your social media for months to come.",
-          "price": "$850"
+          "description": "Two different looks or locations for real content variety — photos for LinkedIn, your website, your proposals and your social media for months to come."
         },
         "reelPresentacion": {
           "title": "Personal Introduction Reel",
-          "description": "A short video where you say, in your own voice, who you are, what you do and who you help — the format that makes someone stop and look at your profile today.",
-          "price": "$550"
+          "description": "A short video where you say, in your own voice, who you are, what you do and who you help — the format that makes someone stop and look at your profile today."
         },
         "paqueteLinkedin": {
           "title": "LinkedIn Content Package",
-          "description": "A photo session plus several ready-to-publish content pieces, so you stay visible on LinkedIn without producing anything yourself every week.",
-          "price": "From $1,100"
+          "description": "A photo session plus several ready-to-publish content pieces, so you stay visible on LinkedIn without producing anything yourself every week."
         },
         "bioProfesional": {
           "title": "Professional Written Bio",
-          "description": "Your bio is the first thing someone reads after seeing your photo. We write your short and long bio in your real voice — never a generic template.",
-          "price": "$180"
+          "description": "Your bio is the first thing someone reads after seeing your photo. We write your short and long bio in your real voice — never a generic template."
         },
         "bannerRedes": {
           "title": "Custom Social Media Banner",
-          "description": "Your LinkedIn or Facebook cover is one of the most wasted spaces on your profile. We design a cover that says who you are in three seconds.",
-          "price": "$150"
+          "description": "Your LinkedIn or Facebook cover is one of the most wasted spaces on your profile. We design a cover that says who you are in three seconds."
         },
         "miniSitioPersonal": {
           "title": "Personal Portfolio Mini Site",
-          "description": "A LinkedIn profile doesn't replace having your own space on the internet. A custom page with your photo, your bio, your services and a clear call to action.",
-          "price": "From $950"
+          "description": "A LinkedIn profile doesn't replace having your own space on the internet. A custom page with your photo, your bio, your services and a clear call to action."
         }
       },
       "corporativo": {
         "fotografiaEquipo": {
           "title": "Corporate Team Photography",
-          "description": "Your team is the face of your company before anyone walks through the door. Individual portraits and a group photo, ready for your website, LinkedIn and email signatures.",
-          "price": "$850"
+          "description": "Your team is the face of your company before anyone walks through the door. Individual portraits and a group photo, ready for your website, LinkedIn and email signatures."
         },
         "fotografiaOficina": {
           "title": "Office & Facility Photography",
-          "description": "Before hiring you, clients want to know who they're dealing with. We capture your facilities to build trust from the very first look.",
-          "price": "$350"
+          "description": "Before hiring you, clients want to know who they're dealing with. We capture your facilities to build trust from the very first look."
         },
         "videoInstitucional": {
           "title": "\"Who We Are\" Institutional Video",
-          "description": "A short, well-made video answers in 60 seconds what text takes three paragraphs to say: who you are, what you do and why to trust your company.",
-          "price": "From $1,900"
+          "description": "A short, well-made video answers in 60 seconds what text takes three paragraphs to say: who you are, what you do and why to trust your company."
         },
         "diaContenido": {
           "title": "Social Media Content Day",
-          "description": "In a half-day session we shoot and edit a complete package of photos and reels, ready to schedule for several weeks.",
-          "price": "From $600"
+          "description": "In a half-day session we shoot and edit a complete package of photos and reels, ready to schedule for several weeks."
         },
         "googleBusinessCorporativo": {
           "title": "Google Business Profile Management",
-          "description": "For many B2B businesses, Google Business Profile is the first real point of contact with a potential client. We keep your listing active and trustworthy.",
-          "price": "From $325/mo"
+          "description": "For many B2B businesses, Google Business Profile is the first real point of contact with a potential client. We keep your listing active and trustworthy."
         },
         "sitioBasico": {
           "title": "Basic Corporate Website",
-          "description": "A strong proposal loses its edge if a Google search for you turns up nothing. A professional, custom landing page that backs up everything else.",
-          "price": "From $950"
+          "description": "A strong proposal loses its edge if a Google search for you turns up nothing. A professional, custom landing page that backs up everything else."
         }
       }
     },
     "websites": {
       "esencial": {
         "title": "Essential Website",
-        "description": "A small, responsive site with a contact form and WhatsApp Business integration — the digital foundation every business needs to stop relying only on social media.",
-        "price": "$1,450"
+        "description": "A small, responsive site with a contact form and WhatsApp Business integration — the digital foundation every business needs to stop relying only on social media."
       },
       "corporativo": {
         "title": "Corporate Website",
-        "description": "A custom professional landing page with your company's key sections — home, services, about and contact — no generic templates or unnecessary plugins.",
-        "price": "From $950"
+        "description": "A custom professional landing page with your company's key sections — home, services, about and contact — no generic templates or unnecessary plugins."
       },
       "portafolio": {
         "title": "Portfolio Mini Site",
-        "description": "Perfect for real estate agents and personal brands: your own page to showcase your work, listings or projects — without depending only on a social profile.",
-        "price": "From $399"
+        "description": "Perfect for real estate agents and personal brands: your own page to showcase your work, listings or projects — without depending only on a social profile."
       },
       "tiendaOnline": {
         "title": "Online Store",
-        "description": "Your own e-commerce store, with your branding, product catalog, and payments and shipping set up — ready to take real orders from day one.",
-        "price": "From $900"
+        "description": "Your own e-commerce store, with your branding, product catalog, and payments and shipping set up — ready to take real orders from day one."
       },
       "profesional": {
         "title": "Professional Website",
-        "description": "More pages, a blog or content manager and advanced forms — for businesses that have outgrown the essentials and need a site that grows with them.",
-        "price": "$2,800"
+        "description": "More pages, a blog or content manager and advanced forms — for businesses that have outgrown the essentials and need a site that grows with them."
       },
       "aMedida": {
         "title": "Fully Custom Website",
-        "description": "Fully custom functionality — your own database, multi-language content, internal dashboards — built with the same professional technology behind ureflect.net.",
-        "price": "From $5,500"
+        "description": "Fully custom functionality — your own database, multi-language content, internal dashboards — built with the same professional technology behind ureflect.net."
       }
     },
     "diseno": {
@@ -567,85 +524,71 @@
         "groupLabel": "Brand Identity",
         "logoEsencial": {
           "title": "Essential Logo",
-          "description": "One initial concept and rounds of adjustments until we land on the right logo — with final files ready to use in any format.",
-          "price": "$450"
+          "description": "One initial concept and rounds of adjustments until we land on the right logo — with final files ready to use in any format."
         },
         "logoProfesional": {
           "title": "Professional Logo",
-          "description": "Several distinct concepts to choose from, plus a mini color and typography guide — for an identity with more options and more thought behind it.",
-          "price": "$750"
+          "description": "Several distinct concepts to choose from, plus a mini color and typography guide — for an identity with more options and more thought behind it."
         },
         "identidadCompleta": {
           "title": "Complete Brand Identity",
-          "description": "Logo, a complete brand guide and social media templates — everything you need for your brand to look consistently right everywhere.",
-          "price": "$1,200"
+          "description": "Logo, a complete brand guide and social media templates — everything you need for your brand to look consistently right everywhere."
         }
       },
       "animacion2d": {
         "groupLabel": "2D Animation",
         "animacionLogo": {
           "title": "Logo Animation (Intro/Outro)",
-          "description": "A few seconds of animation to open or close your videos with your brand in motion — a small detail that shows in every delivery.",
-          "price": "$250"
+          "description": "A few seconds of animation to open or close your videos with your brand in motion — a small detail that shows in every delivery."
         },
         "reelAnimado2d": {
           "title": "2D Animated Reel",
-          "description": "An illustrated reel with animated text and music — perfect when you want to stand out on social media with something different from filmed video.",
-          "price": "$450"
+          "description": "An illustrated reel with animated text and music — perfect when you want to stand out on social media with something different from filmed video."
         },
         "paquetePostsAnimados": {
           "title": "Animated Posts Package",
-          "description": "A set of short animated pieces for social media — eye-catching content, ready to publish, without needing a full video production.",
-          "price": "$900"
+          "description": "A set of short animated pieces for social media — eye-catching content, ready to publish, without needing a full video production."
         }
       },
       "animacion3d": {
         "groupLabel": "3D Animation",
         "render3d": {
           "title": "3D Product/Space Render",
-          "description": "Photorealistic images of a product or space, before it physically exists or without needing to shoot it yet. Especially useful for construction and real estate.",
-          "price": "$600"
+          "description": "Photorealistic images of a product or space, before it physically exists or without needing to shoot it yet. Especially useful for construction and real estate."
         },
         "recorrido3d": {
           "title": "Short 3D Walkthrough",
-          "description": "An animated video that walks through a space or project — the clearest way to show a floor plan or a build before it's finished.",
-          "price": "$1,200"
+          "description": "An animated video that walks through a space or project — the clearest way to show a floor plan or a build before it's finished."
         },
         "animacion3dPersonalizada": {
           "title": "Custom 3D Animation",
-          "description": "A custom 3D animation project tailored to your product, your brand or your architecture — scoped to exactly what you need to show.",
-          "price": "From $1,500"
+          "description": "A custom 3D animation project tailored to your product, your brand or your architecture — scoped to exactly what you need to show."
         }
       },
       "motion": {
         "groupLabel": "Motion Graphics & Animated Video",
         "videoExplicativo": {
           "title": "Animated Explainer Video",
-          "description": "Script, animation and voiceover to explain what your product or service does in under 90 seconds — perfect for your website's home page.",
-          "price": "From $2,200"
+          "description": "Script, animation and voiceover to explain what your product or service does in under 90 seconds — perfect for your website's home page."
         },
         "animacionPresentacion": {
           "title": "Corporate Presentation Animation",
-          "description": "Animated graphics for your pitch decks or business proposals — so your next presentation looks as serious as your business.",
-          "price": "From $600"
+          "description": "Animated graphics for your pitch decks or business proposals — so your next presentation looks as serious as your business."
         }
       }
     },
     "marketing": {
       "asesoriaDigital": {
         "title": "Digital Marketing Advisory",
-        "description": "Social media strategy and content best practices, guided by our digital marketing advisor — so your content doesn't just look good, it's built to convert.",
-        "price": "Custom quote"
+        "description": "Social media strategy and content best practices, guided by our digital marketing advisor — so your content doesn't just look good, it's built to convert."
       },
       "ugcMarcas": {
         "title": "UGC Content for Brands",
-        "description": "We shoot and edit authentic, natural-feeling content featuring your product or service, ready for you to publish on your own channels and ads — without looking like traditional advertising.",
-        "price": "$200 – $350"
+        "description": "We shoot and edit authentic, natural-feeling content featuring your product or service, ready for you to publish on your own channels and ads — without looking like traditional advertising."
       },
       "colaboracionesTravel": {
         "title": "Collaborations with Kevin & Cathe Travel",
-        "description": "If your business is in travel or hospitality, get in front of a real audience of travelers on the Kevin & Cathe Travel account — authentic content, not a traditional ad.",
-        "price": "From $150"
+        "description": "If your business is in travel or hospitality, get in front of a real audience of travelers on the Kevin & Cathe Travel account — authentic content, not a traditional ad."
       }
     }
   }
