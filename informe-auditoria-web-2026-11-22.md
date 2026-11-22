@@ -19,6 +19,28 @@
 
 ---
 
+## Actualización — 22 de noviembre de 2026
+
+Los siguientes hallazgos de este informe ya **no aplican** — se resolvieron
+en el commit `eabd503` ("Reenfocar el sitio a Raleigh-Durham/RTP, limitar
+tipos de negocio y quitar precios"), posterior al commit auditado aquí
+(`6c68645`):
+
+- Las notas en `services.ts` y `services-explorer.tsx` sobre precios
+  públicos (parte de A10 y A9) — los precios ya se quitaron del sitio.
+- Los comentarios desactualizados que hablaban de "Belleza" en
+  `hero-section.tsx` y `portfolio.ts` (parte de A10) — esa categoría ya
+  no se muestra.
+- La parte de **M4** sobre la descripción SEO en español apareciendo
+  también en `/en` — el layout ahora genera la metadata por locale.
+
+El resto del informe (incluyendo M1–M3, M5–M11 y el resto de A1–A20)
+sigue reflejando el estado real del sitio tal como estaba en `6c68645`
+y no se ha vuelto a verificar desde entonces. El contenido original de
+abajo queda intacto como registro histórico de esa fecha.
+
+---
+
 ## Resumen ejecutivo
 
 El sitio está sano a nivel técnico: `tsc`, `eslint` y `next build` pasan sin errores, las 30 rutas públicas responden 200 en `/es` y `/en`, y las traducciones tienen paridad exacta (369 claves en cada idioma, ninguna vacía). **No hay errores críticos.** Los problemas reales son de **calidad visible**: un trabajo del portafolio muestra la foto de otro, el azul de marca `#212bfd` no tiene contraste suficiente sobre los fondos oscuros (ni como fondo de los botones principales con texto negro), todas las páginas comparten el mismo título y la misma descripción en español (también en `/en`), y la página 404 es la genérica de Next, en inglés y sin marca. El SEO técnico (sitemap, robots, canonical, Open Graph) no existe todavía.
